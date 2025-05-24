@@ -10,7 +10,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f0e6d2;
+  background-color: #ffffff;
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
   position: relative;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
   right: 0;
   bottom: 0;
   background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
-  opacity: 0.1;
+  opacity: 0.05;
   z-index: -1;
 }
 
@@ -50,6 +50,12 @@ body {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.site-title:hover {
+  color: #ffd700;
+  text-decoration: none;
 }
 
 .site-title i {
@@ -161,7 +167,7 @@ a:hover {
 
 .lesson-sidebar {
   flex: 0 0 280px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   border: 3px solid #6b46a0;
   border-radius: 15px;
   padding: 20px;
