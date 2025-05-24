@@ -17,7 +17,7 @@
   <div class="game-background"></div>
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="{{ '' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
+      <a class="site-title" href="{{ '/' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
       <nav class="site-nav">
         <a href="{% if page.lang == 'en' %}{{ 'lessons/outline/' | relative_url }}{% else %}{{ 'lessons/outline-' | append: page.lang | append: '/' | relative_url }}{% endif %}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
         <div class="language-selector">
