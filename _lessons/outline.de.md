@@ -1,131 +1,131 @@
 ---
 layout: lesson
-title: Lektionsübersicht
+title: Questkarte
 lang: de
 ---
 
-# Python Spiel-Tutorial - Lektionsübersicht
+# PixelWizards Akademie - Questkarte
 
-Willkommen zu unserer Python-Spieleentwicklungsreise! Diese Übersicht zeigt alle Lektionen, die dich von deinem ersten Python-Programm bis zur Erstellung deines eigenen 2D-RPG-Spiels führen werden.
+<i class="fas fa-map-marked-alt"></i> Willkommen zu deiner magischen Reise durch das Reich von Python! Diese Questkarte enthüllt alle Abenteuer, die auf dich warten, vom Wirken deines ersten Python-Zaubers bis zur Erschaffung deiner eigenen verzauberten 2D-RPG-Welt.
 
-Jede Lektion baut auf den vorherigen auf, daher ist es am besten, sie der Reihe nach zu befolgen. Mach dir keine Sorgen, wenn etwas herausfordernd erscheint - Programmieren ist wie das Erlernen einer neuen Sprache und wird mit der Übung leichter!
+Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am besten, sie der Reihe nach zu absolvieren. Mach dir keine Sorgen, wenn einige Zaubersprüche zunächst herausfordernd erscheinen - das Erlernen der Sprache des Codes ist wie das Erlernen jeder magischen Sprache, und deine Kräfte werden mit jedem gemeisterten Zauber stärker!
 
-## Modul 1: Python-Grundlagen
+## Reich 1: Der Pfad des Lehrlings - Python-Grundlagen
 
-### [Lektion 1: Dein erstes Python-Programm](/PixelWizards/lessons/lesson1/)
-- Was ist Python und warum ist es großartig für Spiele?
-- Python installieren und deine Programmierumgebung einrichten
-- Dein erstes Programm schreiben: Hello, World!
-- Grundkonzepte: Print-Anweisungen, Kommentare und Variablen
+### [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1/) <i class="fas fa-wand-magic-sparkles"></i>
+- Was ist die Python-Sprache und warum ist sie mächtig für die Erschaffung magischer Spiele?
+- Beschwöre Python auf dein magisches Gerät und bereite deine Zauberumgebung vor
+- Wirke deinen ersten Zauber: Hallo, Magische Welt!
+- Grundlegende magische Konzepte: Print-Zauberformeln, Schriftrollen (Kommentare) und magische Behälter (Variablen)
 
-### Lektion 2: Variablen und Datentypen
-- Verschiedene Arten von Daten verstehen (Zahlen, Text, Listen)
-- Variablen erstellen und verwenden
-- Grundlegende mathematische Operationen
-- Eingaben vom Benutzer erhalten
+### Quest 2: Magische Behälter und Essenzen <i class="fas fa-flask-potion"></i>
+- Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)
+- Magische Behälter erschaffen und verwenden (Variablen)
+- Grundlegende Arithmantik (mathematische Operationen)
+- Weisheit vom Benutzer empfangen
 
-### Lektion 3: Entscheidungen mit If-Anweisungen treffen
-- Boolesche Werte (Wahr/Falsch)
-- Vergleichsoperatoren (>, <, ==, usw.)
-- If-, else- und elif-Anweisungen
-- Ein einfaches textbasiertes Abenteuerspiel erstellen
+### Quest 3: Verzweigte Pfade mit Wenn-Verzauberungen <i class="fas fa-road-fork"></i>
+- Wahrheitsmagie (Boolesche Werte - Wahr/Falsch)
+- Vergleichsrunen (>, <, ==, usw.)
+- If-, else- und elif-Verzauberungen
+- Ein einfaches textbasiertes magisches Abenteuer erschaffen
 
-### Lektion 4: Schleifen und Wiederholungen
-- For-Schleifen und While-Schleifen
-- Zählen und Aktionen wiederholen
-- Muster und Animationen in der Konsole erstellen
-- Ein einfaches Zahlenratespiel erstellen
+### Quest 4: Magische Schleifen und Wiederholungen <i class="fas fa-repeat"></i>
+- For-Schleifen und While-Schleifen - die zyklischen Zauber
+- Zählen und magische Aktionen wiederholen
+- Mystische Muster und Animationen in deiner Kristallkugel (Konsole) erschaffen
+- Ein magisches Zahlenweissagungsspiel erschaffen
 
-### Lektion 5: Listen und Sammlungen
-- Listen erstellen und verwenden
-- Listenelemente hinzufügen, entfernen und ändern
-- Durch Listen iterieren
-- Ein einfaches Inventarsystem für ein Spiel erstellen
+### Quest 5: Inventar-Schriftrollen und Sammlungen <i class="fas fa-scroll"></i>
+- Magische Inventare erschaffen und verwenden (Listen)
+- Inventargegenstände hinzufügen, entfernen und verwandeln
+- Durch deine Sammlung magischer Gegenstände wandern
+- Ein Zauberer-Inventarsystem für dein Abenteuer erschaffen
 
-### Lektion 6: Funktionen - Wiederverwendbaren Code erstellen
-- Was sind Funktionen und warum sind sie nützlich?
-- Funktionen erstellen und aufrufen
-- Parameter und Rückgabewerte
-- Ein textbasiertes Abenteuerspiel mit Funktionen erstellen
+### Quest 6: Zauberschriftrollen - Wiederverwendbare Magie erschaffen <i class="fas fa-book-spells"></i>
+- Was sind Zauberschriftrollen (Funktionen) und warum sind sie für Zauberer unerlässlich?
+- Magische Zauberschriftrollen erschaffen und beschwören
+- Zauberkomponenten und zurückgegebene Artefakte (Parameter und Rückgabewerte)
+- Ein textbasiertes magisches Abenteuer mit deiner Zaubersammlung erschaffen
 
-## Modul 2: Einführung in die Spieleentwicklung
+## Reich 2: Die Kunst des Beschwörers - Einführung in die Spieleentwicklung
 
-### Lektion 7: Einführung in Pygame
-- Was ist Pygame und wie installiert man es
-- Ein Spielfenster erstellen
-- Die Spielschleife verstehen
-- Formen und Farben zeichnen
+### Quest 7: Das Pygame-Artefakt <i class="fas fa-gamepad"></i>
+- Was ist das Pygame-Artefakt und wie beschwört man es
+- Ein magisches Fenster zu deiner Spielwelt öffnen
+- Die arkane Schleife verstehen, die alle Spiele antreibt
+- Magische Formen und Farben zeichnen
 
-### Lektion 8: Spielgrafiken
-- Bilder laden und anzeigen
-- Sprites erstellen
-- Grundlagen der Animation
-- Eine einfache Szene für unser Spiel erstellen
+### Quest 8: Visuelle Verzauberungen <i class="fas fa-image"></i>
+- Magische Bilder beschwören und anzeigen
+- Lebende Wesen erschaffen (Sprites)
+- Die Grundlagen, um Illustrationen zum Leben zu erwecken (Animation)
+- Eine einfache magische Szene für unser Reich erschaffen
 
-### Lektion 9: Benutzereingabe und Bewegung
-- Tastatur- und Mauseingaben erfassen
-- Objekte auf dem Bildschirm bewegen
-- Grenzen und Kollisionserkennung
-- Einen steuerbaren Charakter erstellen
+### Quest 9: Kontrolle über deine Magie <i class="fas fa-hand-sparkles"></i>
+- Befehle von magischen Werkzeugen erfassen (Tastatur und Maus)
+- Wesen durch dein magisches Reich bewegen
+- Magische Grenzen und Kollisionserkennung
+- Einen steuerbaren Zauberercharakter erschaffen
 
-### Lektion 10: Sound und Musik
-- Soundeffekte zu deinem Spiel hinzufügen
-- Hintergrundmusik abspielen
-- Lautstärke und Wiedergabe steuern
-- Ein vollständiges sensorisches Erlebnis schaffen
+### Quest 10: Magische Klänge und Musik <i class="fas fa-music"></i>
+- Magische Soundeffekte zu deinem Reich hinzufügen
+- Verzaubernde Hintergrundmelodien abspielen
+- Die Kraft und den Fluss von Klängen kontrollieren
+- Ein vollständiges magisches Sinneserlebnis erschaffen
 
-## Modul 3: Unser RPG-Spiel erstellen
+## Reich 3: Die Herausforderung des Erzmagiers - Unser RPG-Spiel erschaffen
 
-### Lektion 11: Grundlagen des Spieldesigns
-- Deine Spielwelt planen
-- Charaktere und Geschichten erstellen
-- Spielmechaniken und Regeln
-- Eine Karte für dein RPG zeichnen
+### Quest 11: Grundlagen des Reichdesigns <i class="fas fa-map"></i>
+- Deine magische Welt planen
+- Helden, Gefährten und Widersacher erschaffen
+- Spielmechaniken und die Gesetze deines magischen Reiches
+- Eine Karte für deine magische RPG-Welt zeichnen
 
-### Lektion 12: Die Spielwelt erstellen
-- Spielkarten entwerfen und implementieren
-- Kachelbasierte Welten
-- Scrollen und Kamerabewegung
-- Details und Dekorationen hinzufügen
+### Quest 12: Die Spielwelt beschwören <i class="fas fa-mountain-city"></i>
+- Magische Reichskarten entwerfen und implementieren
+- Kachelbasierte magische Welten
+- Schriftroll- und Kristallkugelansichten (Kamerabewegung)
+- Mystische Details und magische Dekorationen hinzufügen
 
-### Lektion 13: Spielercharakter und NPCs
-- Den Spielercharakter erstellen
-- Nicht-Spieler-Charaktere (NPCs)
-- Charakterattribute und Statistiken
-- Dialogsysteme
+### Quest 13: Helden und magische Wesen <i class="fas fa-user-wizard"></i>
+- Deinen Heldencharakter erschaffen
+- Magische Wesen und Kreaturen (NPCs)
+- Charakterattribute, Fähigkeiten und magische Kräfte
+- Verzauberte Gesprächssysteme
 
-### Lektion 14: Quests und Ziele
-- Ein Questsystem implementieren
-- Spielerfortschritt verfolgen
-- Belohnungen und Erfolge
-- Ansprechende Herausforderungen erstellen
+### Quest 14: Abenteuer und Ziele <i class="fas fa-trophy"></i>
+- Ein Quest-Grimoire implementieren
+- Die Reise des Helden verfolgen
+- Magische Belohnungen und Erfolge
+- Fesselnde magische Herausforderungen erschaffen
 
-### Lektion 15: Kampf und Interaktion
-- Ein Kampfsystem entwerfen
-- Rundenbasierte vs. Echtzeit-Aktionen
-- Gesundheit, Schaden und Spielbalance
-- Gegenstandsnutzung und spezielle Fähigkeiten
+### Quest 15: Magische Duelle und Interaktionen <i class="fas fa-wands-sparkles"></i>
+- Ein magisches Kampfsystem entwerfen
+- Rundenbasierte vs. Echtzeit-magische Duelle
+- Heiltränke, magischer Schaden und Spielbalance
+- Artefaktnutzung und spezielle magische Fähigkeiten
 
-### Lektion 16: Spiele speichern und laden
-- Spieldaten speichern
-- Datei-Ein-/Ausgabe in Python
-- Speicherpunkte erstellen
-- Gespeicherte Spiele laden
+### Quest 16: Dein magisches Reich bewahren <i class="fas fa-floppy-disk"></i>
+- Magische Reichsdaten speichern
+- Schriftrollen lesen und schreiben in Python (Datei-Ein-/Ausgabe)
+- Magische Speicherpunkte erschaffen
+- Gespeicherte magische Reiche wiederherstellen
 
-### Lektion 17: Dein Spiel verfeinern
-- Spezialeffekte hinzufügen
-- Die Benutzeroberfläche verbessern
-- Spieltests und Fehlersuche
-- Leistungsoptimierung
+### Quest 17: Deine magische Schöpfung perfektionieren <i class="fas fa-sparkles"></i>
+- Magische Spezialeffekte hinzufügen
+- Die Zauberer-Schnittstelle verbessern
+- Zauberprüfung und Fluchentfernung (Debugging)
+- Deine magische Leistung optimieren
 
-### Lektion 18: Dein Spiel teilen
-- Dein Spiel für andere zum Spielen verpacken
-- Einen Installer erstellen
-- Feedback erhalten und Verbesserungen vornehmen
-- Ideen zur Erweiterung deines Spiels
+### Quest 18: Deine magische Schöpfung teilen <i class="fas fa-share-nodes"></i>
+- Dein magisches Reich für andere Zauberer zum Erkunden verpacken
+- Ein magisches Portal erschaffen (Installer)
+- Magisches Feedback erhalten und Verbesserungen vornehmen
+- Ideen zur Erweiterung deines magischen Reiches
 
-## Abschlussprojekt: Dein vollständiges RPG-Spiel
+## Finale Herausforderung: Dein vollständiges magisches RPG-Reich <i class="fas fa-castle"></i>
 
-Im Abschlussprojekt wirst du alles, was du gelernt hast, zusammenbringen, um dein eigenes RPG-Spiel zu erstellen! Du wirst Charaktere entwerfen, eine Welt erschaffen, Spielmechaniken implementieren und deine Kreation mit Freunden und Familie teilen.
+In der finalen Herausforderung wirst du all das magische Wissen, das du erlangt hast, kombinieren, um dein eigenes verzaubertes RPG-Reich zu erschaffen! Du wirst magische Charaktere entwerfen, eine wundersame Welt erschaffen, magische Spielmechaniken implementieren und deine mystische Kreation mit Freunden und Familie teilen.
 
-Bereit, dein Abenteuer zu beginnen? Gehe zu [Lektion 1: Dein erstes Python-Programm](/PixelWizards/lessons/lesson1/) und beginne deine Reise in die aufregende Welt der Python-Spieleentwicklung!
+Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1/) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei!

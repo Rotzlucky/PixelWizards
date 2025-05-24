@@ -4,37 +4,37 @@ title: Python Game Tutorial for Kids
 lang: en
 ---
 
-# Welcome to the Python Game Tutorial for Kids!
+# Welcome to the PixelWizards Academy!
 
-## Learn Python by Building Your Own RPG Game
+## Embark on a Magical Coding Quest to Create Your Own RPG
 
-Are you ready for an exciting adventure into the world of programming? This tutorial will teach you how to code in Python by creating your very own 2D role-playing game (RPG)!
+<i class="fas fa-hat-wizard"></i> Greetings, young wizard! Are you ready to embark on an epic adventure into the mystical realm of programming? In this magical journey, you'll learn the ancient art of Python coding while crafting your very own 2D role-playing game (RPG)!
 
-### What You'll Learn
+### Magical Skills You'll Master
 
-- The basics of Python programming
-- How to think like a programmer
-- Game development concepts
-- How to create characters, maps, and stories
-- And much more!
+- <i class="fas fa-book-spells"></i> The fundamental spells of Python programming
+- <i class="fas fa-brain"></i> How to think like a master wizard-programmer
+- <i class="fas fa-gamepad"></i> The secrets of game enchantment (development)
+- <i class="fas fa-users"></i> How to conjure characters, magical maps, and epic tales
+- <i class="fas fa-sparkles"></i> And many more powerful incantations!
 
-### Who Is This For?
+### Who Can Join This Quest?
 
-This tutorial is designed for kids (around 10 years old) who are interested in learning programming in a fun and creative way. No prior experience is needed!
+This magical academy welcomes young apprentice wizards (around 10 years old) who wish to learn the art of programming in an enchanting and creative way. No previous magical experience required - we'll start from the very beginning of your journey!
 
-### How It Works
+### How Your Adventure Unfolds
 
-The tutorial is divided into lessons that build upon each other. Each lesson introduces new programming concepts while adding new features to your game. By the end, you'll have created your very own 2D RPG!
+Your quest is divided into magical chapters that build upon each other. Each chapter teaches new programming spells while adding exciting features to your game. By the end of your journey, you'll have created your very own magical 2D RPG world!
 
-### Getting Started
+### Begin Your Magical Journey
 
-Ready to begin your coding adventure? Check out the [Lesson Outline](/PixelWizards/lessons/outline/) to see what's ahead, or jump straight into [Lesson 1: Your First Python Program](/PixelWizards/lessons/lesson1/)!
+Ready to receive your wizard's staff and begin your coding quest? Check out the [Quest Map](/PixelWizards/lessons/outline/) to preview your adventure, or dive straight into [Chapter 1: Casting Your First Python Spell](/PixelWizards/lessons/lesson1/)!
 
-### What You'll Need
+### Items for Your Adventure
 
-- A computer with internet access
-- Curiosity and creativity
-- About 30-60 minutes per lesson
-- A grown-up to help (sometimes)
+- <i class="fas fa-laptop"></i> A magical device (computer) with connection to the wizard network (internet)
+- <i class="fas fa-lightbulb"></i> Your curious mind and creative spirit
+- <i class="fas fa-hourglass-half"></i> About 30-60 minutes per magical lesson
+- <i class="fas fa-user-shield"></i> A master wizard (grown-up) to assist (occasionally)
 
-Let's start coding and have fun creating games with Python!
+<i class="fas fa-wand-sparkles"></i> Let the magical coding adventure begin! <i class="fas fa-dragon"></i>
