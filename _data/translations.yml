@@ -7,7 +7,7 @@
 nav:
   lessons:
     en: "Lessons"
-    de: "Lektionen"
+    de: "Quests"
   
 # Language flags and names are defined in _config.yml under 'languages'
 
@@ -15,7 +15,7 @@ nav:
 footer:
   copyright:
     en: "Python Game Tutorial for Kids. Created with ❤️ for young programmers."
-    de: "Python Spiel-Tutorial für Kinder. Mit ❤️ erstellt für junge Programmierer."
+    de: "Python Zauber-Tutorial für Kinder. Mit ❤️ erschaffen für junge Zauberlehrlinge."
 
 # Lesson navigation
 lesson:
@@ -24,10 +24,10 @@ lesson:
     de: "Navigation"
   objectives_intro:
     en: "In this lesson, you will:"
-    de: "In dieser Lektion wirst du:"
+    de: "In dieser Quest wirst du:"
   previous:
     en: "Previous Lesson"
-    de: "Vorherige Lektion"
+    de: "Vorherige Quest"
   next:
     en: "Next Lesson"
-    de: "Nächste Lektion"
+    de: "Nächste Quest"
