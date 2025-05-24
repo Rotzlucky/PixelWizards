@@ -10,13 +10,13 @@ lang: de
 
 Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am besten, sie der Reihe nach zu absolvieren. Mach dir keine Sorgen, wenn einige Zaubersprüche zunächst herausfordernd erscheinen - das Erlernen der Sprache des Codes ist wie das Erlernen jeder magischen Sprache, und deine Kräfte werden mit jedem gemeisterten Zauber stärker!
 
-## Reich 1: Der Pfad des Lehrlings - Python-Grundlagen
+## Reich 1: Der Pfad des Zauberlehrlings - Python-Grundlagen
 
 ### [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1/) <i class="fas fa-wand-magic-sparkles"></i>
 - Was ist die Python-Sprache und warum ist sie mächtig für die Erschaffung magischer Spiele?
-- Beschwöre Python auf dein magisches Gerät und bereite deine Zauberumgebung vor
-- Wirke deinen ersten Zauber: Hallo, Magische Welt!
-- Grundlegende magische Konzepte: Print-Zauberformeln, Schriftrollen (Kommentare) und magische Behälter (Variablen)
+- Python auf dein magisches Gerät beschwören und deine Zauberumgebung vorbereiten
+- Deinen ersten Zauber wirken: Hallo, Magische Welt!
+- Grundlegende magische Konzepte: Print-Beschwörungen, magische Schriftrollen (Kommentare) und magische Behälter (Variablen)
 
 ### Quest 2: Magische Behälter und Essenzen <i class="fas fa-flask-potion"></i>
 - Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)
