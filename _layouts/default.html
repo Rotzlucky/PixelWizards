@@ -6,21 +6,21 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   
   <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
-  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/images/favicon.svg">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
   
   <!-- CSS - Multiple fallbacks for GitHub Pages -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <div class="game-background"></div>
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="{{ '/' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
+      <a class="site-title" href="{{ '' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
       <nav class="site-nav">
-        <a href="{% if page.lang == 'en' %}{{ '/lessons/outline/' | relative_url }}{% else %}{{ '/lessons/outline-' | append: page.lang | append: '/' | relative_url }}{% endif %}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
+        <a href="{% if page.lang == 'en' %}{{ 'lessons/outline/' | relative_url }}{% else %}{{ 'lessons/outline-' | append: page.lang | append: '/' | relative_url }}{% endif %}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
         <div class="language-selector">
           <select id="language-dropdown" onchange="changeLanguage(this.value)">
             {% for lang in site.languages %}
