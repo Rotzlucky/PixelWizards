@@ -2,11 +2,11 @@
 title: PixelWizards - Python Game Tutorial for Kids
 description: A fun and interactive tutorial to teach Python programming to children through game development
 baseurl: "/PixelWizards" # the subpath of your site
-url: "" # the base hostname & protocol for your site
+url: "https://rotzlucky.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima  # Removed to avoid conflicts with custom CSS
 
 # Multilingual settings
 languages:
@@ -35,3 +35,19 @@ defaults:
       type: "lessons"
     values:
       layout: lesson
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude development files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - Dockerfile
+  - README.md
+  - .dockerignore
+  - vendor/
+  - .idea/

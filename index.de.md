@@ -28,7 +28,7 @@ Das Tutorial ist in Lektionen unterteilt, die aufeinander aufbauen. Jede Lektion
 
 ### Erste Schritte
 
-Bereit, dein Coding-Abenteuer zu beginnen? Schau dir die [Lektionsübersicht](/PixelWizards/lessons/outline-de/) an, um zu sehen, was dich erwartet, oder starte direkt mit [Lektion 1: Dein erstes Python-Programm](/PixelWizards/lessons/lesson1/)!
+Bereit, dein Coding-Abenteuer zu beginnen? Schau dir die [Lektionsübersicht]({{ '/lessons/outline-de/' | relative_url }}) an, um zu sehen, was dich erwartet, oder starte direkt mit [Lektion 1: Dein erstes Python-Programm]({{ '/lessons/lesson1/' | relative_url }})!
 
 ### Was du brauchst
 

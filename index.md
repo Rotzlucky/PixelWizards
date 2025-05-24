@@ -28,7 +28,7 @@ Your quest is divided into magical chapters that build upon each other. Each cha
 
 ### Begin Your Magical Journey
 
-Ready to receive your wizard's staff and begin your coding quest? Check out the [Quest Map](/PixelWizards/lessons/outline/) to preview your adventure, or dive straight into [Chapter 1: Casting Your First Python Spell](/PixelWizards/lessons/lesson1/)!
+Ready to receive your wizard's staff and begin your coding quest? Check out the [Quest Map]({{ '/lessons/outline/' | relative_url }}) to preview your adventure, or dive straight into [Chapter 1: Casting Your First Python Spell]({{ '/lessons/lesson1/' | relative_url }})!
 
 ### Items for Your Adventure
 
