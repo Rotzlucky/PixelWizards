@@ -28,7 +28,7 @@ The tutorial is divided into lessons that build upon each other. Each lesson int
 
 ### Getting Started
 
-Ready to begin your coding adventure? Check out the [Lesson Outline](lessons/outline/) to see what's ahead, or jump straight into [Lesson 1: Your First Python Program](lessons/lesson1/)!
+Ready to begin your coding adventure? Check out the [Lesson Outline](/PixelWizards/lessons/outline/) to see what's ahead, or jump straight into [Lesson 1: Your First Python Program](/PixelWizards/lessons/lesson1/)!
 
 ### What You'll Need
 

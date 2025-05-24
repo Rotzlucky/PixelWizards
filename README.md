@@ -16,14 +16,19 @@ This tutorial is designed for children around 10 years old who want to learn pro
 
 ## Project Structure
 
-- `_config.yml`: Jekyll configuration file
+- `_config.yml`: Jekyll configuration file with site settings and multilingual configuration
 - `index.md`: Main landing page (English)
 - `index.de.md`: Main landing page (German)
 - `_layouts/`: HTML templates for the site
-- `_includes/`: Reusable HTML components
+  - `default.html`: Main layout template with header, footer, and language selector
+  - `lesson.html`: Template for lesson pages with navigation and objectives
+- `_data/`: Data files for the site
+  - `translations.yml`: Translations for UI elements in different languages
 - `assets/`: CSS, images, and other static files
-- `lessons/`: Lesson content and outline
-- `_lessons/`: Individual lesson files
+  - `css/main.css`: Main stylesheet for the site
+- `_lessons/`: Individual lesson files (both English and German versions)
+  - `outline.md` & `outline.de.md`: Lesson outline in English and German
+  - `lesson1.md` & `lesson1.de.md`: First lesson in English and German
 
 ## Setup for Local Development
 
@@ -91,15 +96,42 @@ You can set up this project locally using either Docker or by installing the dep
 
 ## Contributing
 
-Contributions are welcome! If you'd like to add new lessons, fix bugs, or improve translations:
+Contributions are welcome! Here are some ways you can help improve this project:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Make your changes
-4. Test your changes (see the Testing section below)
-5. Commit your changes (`git commit -m 'Add some feature'`)
-6. Push to the branch (`git push origin feature/your-feature-name`)
-7. Open a Pull Request
+### Types of Contributions Needed
+
+- **New Lessons**: Create additional lessons following the outline in `_lessons/outline.md`
+- **Translations**: Translate existing content to other languages
+- **Bug Fixes**: Fix issues with the site functionality or content
+- **Enhancements**: Improve the UI, add new features, or optimize performance
+- **Documentation**: Improve or expand the documentation
+
+### How to Contribute
+
+1. **Fork the repository**: Click the Fork button at the top right of this page
+2. **Clone your fork**: `git clone https://github.com/yourusername/PixelWizards.git`
+3. **Create a new branch**: `git checkout -b feature/your-feature-name`
+4. **Make your changes**: Follow the guidelines below for specific types of contributions
+5. **Test your changes**: See the Testing section below
+6. **Commit your changes**: `git commit -m 'Add some feature'`
+7. **Push to your branch**: `git push origin feature/your-feature-name`
+8. **Open a Pull Request**: Go to the original repository and click "New Pull Request"
+
+### Guidelines for Specific Contributions
+
+#### Adding New Lessons
+
+- Follow the format of existing lesson files in `_lessons/`
+- Include YAML front matter with appropriate metadata
+- Ensure content is child-friendly and age-appropriate
+- Include code examples, explanations, and challenges
+
+#### Adding Translations
+
+- Create a new file with the language code suffix (e.g., `lesson2.fr.md` for French)
+- Update `_data/translations.yml` if adding UI elements in a new language
+- Add the new language to `_config.yml` if it's not already there
+- Ensure translations are accurate and maintain the original tone
 
 ## Testing
 

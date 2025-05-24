@@ -128,4 +128,4 @@ Each lesson builds on the previous ones, so it's best to follow them in order. D
 
 In the final project, you'll bring together everything you've learned to create your very own RPG game! You'll design characters, create a world, implement game mechanics, and share your creation with friends and family.
 
-Ready to start your adventure? Head to [Lesson 1: Your First Python Program](/lessons/lesson1/) and begin your journey into the exciting world of Python game development!
+Ready to start your adventure? Head to [Lesson 1: Your First Python Program](/PixelWizards/lessons/lesson1/) and begin your journey into the exciting world of Python game development!

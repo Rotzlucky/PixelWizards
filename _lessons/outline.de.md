@@ -12,7 +12,7 @@ Jede Lektion baut auf den vorherigen auf, daher ist es am besten, sie der Reihe 
 
 ## Modul 1: Python-Grundlagen
 
-### [Lektion 1: Dein erstes Python-Programm](/PixelWizards/lessons/lesson1-de/)
+### [Lektion 1: Dein erstes Python-Programm](/PixelWizards/lessons/lesson1/)
 - Was ist Python und warum ist es großartig für Spiele?
 - Python installieren und deine Programmierumgebung einrichten
 - Dein erstes Programm schreiben: Hello, World!
@@ -128,4 +128,4 @@ Jede Lektion baut auf den vorherigen auf, daher ist es am besten, sie der Reihe 
 
 Im Abschlussprojekt wirst du alles, was du gelernt hast, zusammenbringen, um dein eigenes RPG-Spiel zu erstellen! Du wirst Charaktere entwerfen, eine Welt erschaffen, Spielmechaniken implementieren und deine Kreation mit Freunden und Familie teilen.
 
-Bereit, dein Abenteuer zu beginnen? Gehe zu [Lektion 1: Dein erstes Python-Programm](/lessons/lesson1-de/) und beginne deine Reise in die aufregende Welt der Python-Spieleentwicklung!
+Bereit, dein Abenteuer zu beginnen? Gehe zu [Lektion 1: Dein erstes Python-Programm](/PixelWizards/lessons/lesson1/) und beginne deine Reise in die aufregende Welt der Python-Spieleentwicklung!
