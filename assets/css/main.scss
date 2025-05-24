@@ -19,7 +19,7 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
   overflow-x: hidden;
 }
 
@@ -161,27 +161,30 @@ a:hover {
 /* Lesson Layout */
 .lesson-container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   margin-top: 20px;
+  min-height: 500px;
 }
 
 .lesson-sidebar {
-  flex: 0 0 280px;
+  flex: 0 0 240px;
   background-color: rgba(255, 255, 255, 0.95);
   border: 3px solid #6b46a0;
   border-radius: 15px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   height: fit-content;
   position: sticky;
   top: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 40px);
 }
 
 .lesson-sidebar h3 {
   color: #6b46a0;
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   border-bottom: 2px solid #ffd700;
   padding-bottom: 10px;
 }
@@ -193,24 +196,25 @@ a:hover {
 }
 
 .lesson-nav li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .lesson-nav li a {
   display: block;
-  padding: 10px 15px;
+  padding: 8px 12px;
   color: #6b46a0;
   background-color: rgba(255, 215, 0, 0.1);
   border: 2px solid transparent;
   border-radius: 8px;
   transition: all 0.3s ease;
   font-weight: 500;
+  font-size: 0.9em;
 }
 
 .lesson-nav li a:hover {
   background-color: rgba(255, 125, 0, 0.2);
   border-color: #ff7d00;
-  transform: translateX(5px);
+  transform: translateX(3px);
   text-decoration: none;
 }
 
@@ -223,8 +227,8 @@ a:hover {
 
 .lesson-nav li a i {
   color: #ff7d00;
-  margin-right: 8px;
-  width: 16px;
+  margin-right: 6px;
+  width: 14px;
 }
 
 .lesson-nav li.active a i {
@@ -233,11 +237,33 @@ a:hover {
 
 .lesson-content {
   flex: 1;
+  min-width: 0;
   background-color: rgba(255, 255, 255, 0.95);
   border: 3px solid #8a5bbf;
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.lesson-content pre {
+  overflow-x: auto;
+  max-width: 100%;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.lesson-content code {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.lesson-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .quest-header h1 {
@@ -287,6 +313,8 @@ a:hover {
   margin-top: 40px;
   padding-top: 20px;
   border-top: 2px solid #ffd700;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .prev-lesson, .next-lesson {
@@ -299,6 +327,8 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  min-width: 120px;
+  text-align: center;
 }
 
 .prev-lesson:hover, .next-lesson:hover {
@@ -340,16 +370,46 @@ a:hover {
 }
 
 /* Responsive design */
+@media (max-width: 992px) {
+  .lesson-sidebar {
+    flex: 0 0 200px;
+    padding: 12px;
+  }
+  
+  .lesson-sidebar h3 {
+    font-size: 1.1em;
+  }
+  
+  .lesson-nav li a {
+    padding: 6px 10px;
+    font-size: 0.85em;
+  }
+  
+  .gap {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
   .lesson-container {
     flex-direction: column;
+    gap: 15px;
   }
 
   .lesson-sidebar {
     flex: none;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: static;
+    max-height: none;
+  }
+
+  .lesson-content {
+    padding: 15px;
   }
 
   .site-nav {
@@ -364,5 +424,28 @@ a:hover {
 
   .prev-lesson, .next-lesson {
     text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0 8px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  
+  .lesson-content {
+    padding: 12px;
+  }
+  
+  .lesson-sidebar {
+    padding: 10px;
   }
 }
