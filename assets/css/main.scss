@@ -1,10 +1,180 @@
 ---
 ---
 
-/* PixelWizards CSS */
-body { font-family: 'Comic Sans MS', sans-serif; color: #333; background-color: #f0e6d2; }
-.site-header { background-color: #6b46a0; padding: 15px 0; }
-.site-title { color: white; font-size: 28px; font-weight: bold; text-decoration: none; }
-h1, h2, h3 { color: #6b46a0; }
-a { color: #8a5bbf; text-decoration: none; }
-.site-footer { background-color: #6b46a0; color: white; padding: 20px 0; }
+/* Main CSS for Python Game Tutorial - PixelWizards */
+
+/* Base styles */
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6d2;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+/* Game Background */
+.game-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Header */
+.site-header {
+  background-color: #6b46a0;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #ffd700;
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: 1px;
+}
+
+.site-title i {
+  color: #ffd700;
+  margin-right: 8px;
+}
+
+.site-nav {
+  float: right;
+}
+
+.site-nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.quest-button {
+  background-color: #ff7d00;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 2px solid #ffd700;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.quest-button:hover {
+  background-color: #ffa500;
+  transform: scale(1.05);
+  text-decoration: none !important;
+}
+
+.language-selector {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.language-selector select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 2px solid #ffd700;
+  background-color: #6b46a0;
+  color: white;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.language-selector select:hover {
+  background-color: #8a5bbf;
+}
+
+.language-selector select option {
+  background-color: white;
+  color: #333;
+}
+
+/* Main content */
+.page-content {
+  padding: 40px 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #6b46a0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Garamond', serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1em;
+  color: #8a5bbf;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #ff7d00;
+}
+
+a {
+  color: #8a5bbf;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #6b46a0;
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #6b46a0;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 3px solid #ffd700;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .lesson-container {
+    flex-direction: column;
+  }
+
+  .lesson-sidebar {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .site-nav {
+    float: none;
+    margin-top: 10px;
+  }
+}
