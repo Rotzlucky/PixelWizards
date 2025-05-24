@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="lesson-container">
+    <div class="lesson-sidebar">
+        <h3>{{ site.data.translations.lesson.navigation[page.lang] }}</h3>
+        <ul class="lesson-nav">
+            <li>
+                <a href="{% if page.lang == 'en' %}{{ '/lessons/outline/' | relative_url }}{% else %}{{ '/lessons/outline-' | append: page.lang | append: '/' | relative_url }}{% endif %}">
+                    {{ site.data.translations.nav.lessons[page.lang] }}
+                </a>
+            </li>
+            {% for lesson in site.lessons %}
+                {% if lesson.lang == page.lang %}
+                    {% unless lesson.url contains "outline" %}
+                    <li {% if page.url== lesson.url %}class="active" {% endif %}>
+                        <a href="{{ lesson.url | relative_url }}">{{ lesson.title }}</a>
+                    </li>
+                    {% endunless %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="lesson-content">
+        <h1>{{ page.title }}</h1>
+
+        {% if page.objectives %}
+        <div class="lesson-objectives">
+            <h3>{{ site.data.translations.lesson.objectives_intro[page.lang] }}</h3>
+            <ul>
+                {% for objective in page.objectives %}
+                <li>{{ objective }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {{ content }}
+
+        <div class="lesson-navigation">
+            {% if page.previous_lesson %}
+            <a href="{{ page.previous_lesson | relative_url }}" class="prev-lesson">← {{ site.data.translations.lesson.previous[page.lang] }}</a>
+            {% endif %}
+
+            {% if page.next_lesson %}
+            <a href="{{ page.next_lesson | relative_url }}" class="next-lesson">{{ site.data.translations.lesson.next[page.lang] }} →</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

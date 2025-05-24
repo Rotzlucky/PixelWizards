@@ -1,0 +1,37 @@
+# Site settings for Python Game Tutorial
+title: PixelWizards - Python Game Tutorial for Kids
+description: A fun and interactive tutorial to teach Python programming to children through game development
+baseurl: "/PixelWizards" # the subpath of your site
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Multilingual settings
+languages:
+  - code: en
+    name: English
+    flag: 🇬🇧
+    default: true
+  - code: de
+    name: Deutsch
+    flag: 🇩🇪
+
+# Collections
+collections:
+  lessons:
+    output: true
+    permalink: /:collection/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "lessons"
+    values:
+      layout: lesson

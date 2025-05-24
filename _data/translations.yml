@@ -1,0 +1,33 @@
+# Translations for UI elements
+# 
+# This file contains translations for all UI text in the site.
+# To add a new language, simply add a new entry under each key.
+
+# Navigation
+nav:
+  lessons:
+    en: "Lessons"
+    de: "Lektionen"
+  
+# Language flags and names are defined in _config.yml under 'languages'
+
+# Footer
+footer:
+  copyright:
+    en: "Python Game Tutorial for Kids. Created with ❤️ for young programmers."
+    de: "Python Spiel-Tutorial für Kinder. Mit ❤️ erstellt für junge Programmierer."
+
+# Lesson navigation
+lesson:
+  navigation:
+    en: "Navigation"
+    de: "Navigation"
+  objectives_intro:
+    en: "In this lesson, you will:"
+    de: "In dieser Lektion wirst du:"
+  previous:
+    en: "Previous Lesson"
+    de: "Vorherige Lektion"
+  next:
+    en: "Next Lesson"
+    de: "Nächste Lektion"

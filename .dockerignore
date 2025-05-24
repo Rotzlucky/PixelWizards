@@ -1,0 +1,21 @@
+# Git
+.git
+.gitignore
+
+# Jekyll build output
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+# Bundler
+.bundle
+vendor
+
+# IDE files
+.idea
+.vscode
+
+# OS files
+.DS_Store
+Thumbs.db

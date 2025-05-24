@@ -1,0 +1,206 @@
+/* Main CSS for Python Game Tutorial */
+
+/* Base styles */
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background-color: #4CAF50;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.site-nav {
+  float: right;
+}
+
+.site-nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.language-selector {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.language-selector select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #3b8e3f;
+  color: white;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.language-selector select:hover {
+  background-color: #2E7D32;
+}
+
+.language-selector select option {
+  background-color: white;
+  color: #333;
+}
+
+/* Main content */
+.page-content {
+  padding: 40px 0;
+}
+
+h1, h2, h3 {
+  color: #2E7D32;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: #1976D2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lesson specific styles */
+.lesson-container {
+  display: flex;
+  gap: 40px;
+}
+
+.lesson-sidebar {
+  flex: 0 0 250px;
+  background-color: #E8F5E9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.lesson-content {
+  flex: 1;
+}
+
+.lesson-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-nav li {
+  margin-bottom: 10px;
+}
+
+.lesson-nav li.active a {
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+.lesson-objectives {
+  background-color: #E3F2FD;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.lesson-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.prev-lesson, .next-lesson {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.prev-lesson:hover, .next-lesson:hover {
+  background-color: #2E7D32;
+  text-decoration: none;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .lesson-container {
+    flex-direction: column;
+  }
+
+  .lesson-sidebar {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .site-nav {
+    float: none;
+    margin-top: 10px;
+  }
+}
