@@ -11,7 +11,8 @@ This tutorial is designed for children around 10 years old who want to learn pro
 - Step-by-step lessons with clear explanations
 - Fun, interactive examples
 - Challenges to reinforce learning
-- Multilingual support (currently English and German)
+- **Automated multilingual support** with cookie-based language persistence (English and German)
+- **Smart navigation** that maintains language consistency throughout the site
 - Child-friendly design and language
 
 ## Project Structure
@@ -21,7 +22,10 @@ This tutorial is designed for children around 10 years old who want to learn pro
 - `index.de.md`: Main landing page (German)
 - `_layouts/`: HTML templates for the site
   - `default.html`: Main layout template with header, footer, and language selector
-  - `lesson.html`: Template for lesson pages with navigation and objectives
+  - `lesson.html`: Template for lesson pages with automated language-aware navigation
+- `_includes/`: Reusable components
+  - `language-handler.html`: JavaScript for automatic link conversion and language detection
+  - `link-helper.html`: Helper functions for multilingual link generation
 - `_data/`: Data files for the site
   - `translations.yml`: Translations for UI elements in different languages
 - `assets/`: CSS, images, and other static files
@@ -86,83 +90,82 @@ You can set up this project locally using either Docker or by installing the dep
 
 4. Open your browser and go to `http://localhost:4000/Spellcode/`
 
-## Deploying to GitHub Pages
-
-1. Create a new repository on GitHub
-2. Push this code to your repository
-3. Go to Settings > Pages
-4. Select the main branch as the source
-5. Your site will be published at `https://yourusername.github.io/Spellcode/`
-
-## Contributing
-
-Contributions are welcome! Here are some ways you can help improve this project:
-
-### Types of Contributions Needed
-
-- **New Lessons**: Create additional lessons following the outline in `_lessons/outline.md`
-- **Translations**: Translate existing content to other languages
-- **Bug Fixes**: Fix issues with the site functionality or content
-- **Enhancements**: Improve the UI, add new features, or optimize performance
-- **Documentation**: Improve or expand the documentation
-
-### How to Contribute
-
-1. **Fork the repository**: Click the Fork button at the top right of this page
-2. **Clone your fork**: `git clone https://github.com/yourusername/Spellcode.git`
-3. **Create a new branch**: `git checkout -b feature/your-feature-name`
-4. **Make your changes**: Follow the guidelines below for specific types of contributions
-5. **Test your changes**: See the Testing section below
-6. **Commit your changes**: `git commit -m 'Add some feature'`
-7. **Push to your branch**: `git push origin feature/your-feature-name`
-8. **Open a Pull Request**: Go to the original repository and click "New Pull Request"
-
-### Guidelines for Specific Contributions
-
-#### Adding New Lessons
-
-- Follow the format of existing lesson files in `_lessons/`
-- Include YAML front matter with appropriate metadata
-- Ensure content is child-friendly and age-appropriate
-- Include code examples, explanations, and challenges
-
 #### Adding Translations
 
 - Create a new file with the language code suffix (e.g., `lesson2.fr.md` for French)
-- Update `_data/translations.yml` if adding UI elements in a new language
-- Add the new language to `_config.yml` if it's not already there
+- **Use neutral links** - write all internal links using neutral English paths like `{{ 'lessons/lesson1/' | relative_url }}` (the system will automatically convert them)
+- Update `_data/translations.yml` to add UI elements in the new language
+- Add the new language to `_config.yml` languages section
+- Update `_includes/language-handler.html` to add language detection rules for the new language
 - Ensure translations are accurate and maintain the original tone
 
-## Testing
+## Multilingual System
 
-### Testing Links
+This site features an **automated multilingual system** that requires minimal maintenance while providing an excellent user experience.
 
-To ensure all links in the website work correctly, you can use the provided test script:
+### How It Works
 
-1. Start the Jekyll server using Docker:
+1. **Content authors write neutral links** using Jekyll's `relative_url` filter
+2. **JavaScript automatically detects** the current page language
+3. **Links are converted** to the appropriate language version on page load
+4. **Cookie stores** user language preference for future visits
+5. **Users stay in their language** when navigating throughout the site
+
+### Writing Content with Neutral Links
+
+When creating content, always use neutral English links that will be automatically converted:
+
+```markdown
+✅ Good (Neutral Links):
+[Quest Map]({{ 'lessons/outline/' | relative_url }})
+[Lesson 1]({{ 'lessons/lesson1/' | relative_url }})
+
+❌ Avoid (Language-Specific Links):
+[Quest Map]({{ 'lessons/outline-de/' | relative_url }})
+[Lesson 1]({{ 'lessons/lesson1-de/' | relative_url }})
+```
+
+### Adding New Languages
+
+To add a new language (e.g., Spanish):
+
+1. **Update `_config.yml`:**
+   ```yaml
+   languages:
+     - code: en
+       name: English
+       flag: 🇬🇧
+       default: true
+     - code: de
+       name: Deutsch
+       flag: 🇩🇪
+     - code: es
+       name: Español
+       flag: 🇪🇸
    ```
-   ./scripts/docker-serve.sh
+
+2. **Update `_data/translations.yml`:**
+   ```yaml
+   nav:
+     lessons:
+       en: "Lessons"
+       de: "Quests"
+       es: "Lecciones"
    ```
 
-2. In a new terminal window, run the link test script:
-   ```
-   ./scripts/test-links.sh
-   ```
+3. **Update `_includes/language-handler.html`:**
+   Add language detection and conversion rules for Spanish files (`.es` suffix)
 
-This script will check that all important links in the site are working correctly, including:
-- Language switching between English and German
-- Links to lessons from the main pages
-- Links within the lesson outline page
+4. **Create content files:**
+   - `index.es.md`
+   - `lesson1.es.md`
+   - etc.
 
-If any links are broken, the script will report the errors.
+### File Naming Convention
 
-## Adding New Languages
-
-To add a new language:
-
-1. Add the language to the `languages` section in `_config.yml`
-2. Create translated versions of pages with the language code (e.g., `index.fr.md` for French)
-3. Create a directory for lesson translations if needed
+- **English:** `lesson1.md`, `outline.md`, `index.md`
+- **German:** `lesson1.de.md`, `outline.de.md`, `index.de.md`
+- **Spanish:** `lesson1.es.md`, `outline.es.md`, `index.es.md`
 
 ## License
 

@@ -19,7 +19,7 @@
     <div class="wrapper">
       <a class="site-title" href="{{ '/' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
       <nav class="site-nav">
-        <a href="{% if page.lang == 'en' %}{{ 'lessons/outline/' | relative_url }}{% else %}{{ 'lessons/outline-' | append: page.lang | append: '/' | relative_url }}{% endif %}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
+        <a href="{{ 'lessons/outline/' | relative_url }}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
         <div class="language-selector">
           <select id="language-dropdown" onchange="changeLanguage(this.value)">
             {% for lang in site.languages %}
@@ -30,23 +30,12 @@
           </select>
         </div>
 
-        <script>
-          function changeLanguage(langCode) {
-            var baseUrl = "{{ site.baseurl }}";
-            var defaultLang = "{{ site.languages | where: 'default', true | map: 'code' | first }}";
-
-            // For simplicity, always redirect to the home page in the selected language
-            // This is a starting point that can be enhanced for more complex navigation
-            if (langCode === defaultLang) {
-              window.location.href = baseUrl + '/';
-            } else {
-              window.location.href = baseUrl + '/index.' + langCode + '.html';
-            }
-          }
-        </script>
+        {% include language-handler.html %}
       </nav>
     </div>
   </header>
+  
+  {% include link-helper.html %}
 
   <section class="hero-banner">
     <div class="hero-image">

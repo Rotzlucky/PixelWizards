@@ -28,7 +28,7 @@ Deine Quest ist in magische Kapitel unterteilt, die aufeinander aufbauen. Jedes 
 
 ### Beginne deine magische Reise
 
-Bereit, deinen Zauberstab zu erhalten und deine Coding-Quest zu beginnen? Schaue dir die [Questkarte]({{ 'lessons/outline-de/' | relative_url }}) an, um eine Vorschau auf dein Abenteuer zu erhalten, oder stürze dich direkt in [Kapitel 1: Wirke deinen ersten Python-Zauber]({{ 'lessons/lesson1-de/' | relative_url }})!
+Bereit, deinen Zauberstab zu erhalten und deine Coding-Quest zu beginnen? Schaue dir die [Questkarte]({{ 'lessons/outline/' | relative_url }}) an, um eine Vorschau auf dein Abenteuer zu erhalten, oder stürze dich direkt in [Kapitel 1: Wirke deinen ersten Python-Zauber]({{ 'lessons/lesson1/' | relative_url }})!
 
 ### Gegenstände für dein Abenteuer
 
