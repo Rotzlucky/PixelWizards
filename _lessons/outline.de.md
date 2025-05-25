@@ -12,13 +12,13 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 ## Reich 1: Der Pfad des Zauberlehrlings - Python-Grundlagen
 
-### [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1/) <i class="fas fa-wand-magic-sparkles"></i>
+### [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1-de/) <i class="fas fa-wand-magic-sparkles"></i>
 - Was ist die Python-Sprache und warum ist sie mächtig für die Erschaffung magischer Spiele?
 - Python auf dein magisches Gerät beschwören und deine Zauberumgebung vorbereiten
 - Deinen ersten Zauber wirken: Hallo, Magische Welt!
 - Grundlegende magische Konzepte: Print-Beschwörungen, magische Schriftrollen (Kommentare) und magische Behälter (Variablen)
 
-### Quest 2: Magische Behälter und Essenzen <i class="fas fa-flask-potion"></i>
+### [Quest 2: Magische Behälter und Essenzen](/PixelWizards/lessons/lesson2-de/) <i class="fas fa-flask-potion"></i>
 - Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)
 - Magische Behälter erschaffen und verwenden (Variablen)
 - Grundlegende Arithmantik (mathematische Operationen)

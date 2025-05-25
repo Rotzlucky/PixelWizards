@@ -4,6 +4,10 @@
 /* Main CSS for Python Game Tutorial - PixelWizards */
 
 /* Base styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
   line-height: 1.6;
@@ -177,7 +181,9 @@ a:hover {
   position: sticky;
   top: 20px;
   overflow-y: auto;
+  overflow-x: hidden;
   max-height: calc(100vh - 40px);
+  word-wrap: break-word;
 }
 
 .lesson-sidebar h3 {
@@ -209,6 +215,8 @@ a:hover {
   transition: all 0.3s ease;
   font-weight: 500;
   font-size: 0.9em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .lesson-nav li a:hover {
@@ -403,13 +411,17 @@ a:hover {
   .lesson-sidebar {
     flex: none;
     width: 100%;
+    max-width: 100%;
     margin-bottom: 15px;
     position: static;
     max-height: none;
+    box-sizing: border-box;
   }
 
   .lesson-content {
     padding: 15px;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
   .site-nav {
@@ -425,6 +437,8 @@ a:hover {
   .prev-lesson, .next-lesson {
     text-align: center;
     width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
   }
 }
 
@@ -443,9 +457,55 @@ a:hover {
   
   .lesson-content {
     padding: 12px;
+    box-sizing: border-box;
   }
   
   .lesson-sidebar {
     padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  .lesson-content {
+    border-radius: 10px;
+  }
+  
+  .prev-lesson, .next-lesson {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+  
+  .lesson-nav li a {
+    padding: 6px 8px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    padding: 0 5px;
+  }
+  
+  .lesson-container {
+    gap: 10px;
+  }
+  
+  .lesson-content, .lesson-sidebar {
+    padding: 8px;
+    border-width: 2px;
+  }
+  
+  .prev-lesson, .next-lesson {
+    padding: 8px 12px;
+    font-size: 0.85em;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .lesson-nav li a {
+    padding: 5px 6px;
+    font-size: 0.75em;
   }
 }
