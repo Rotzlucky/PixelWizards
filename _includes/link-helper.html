@@ -21,6 +21,8 @@ window.SpellcodeLinkHelper = {
       // German language modifications
       if (basePath.includes('lessons/outline')) {
         return basePath.replace('lessons/outline', 'lessons/outline-de');
+      } else if (basePath.includes('lessons/preparation')) {
+        return basePath.replace('lessons/preparation', 'lessons/preparation-de');
       } else if (basePath.includes('lessons/lesson')) {
         return basePath.replace(/lessons\/(lesson\d+)/, 'lessons/$1-de');
       } else if (basePath === '/' || basePath === '') {
@@ -30,6 +32,8 @@ window.SpellcodeLinkHelper = {
       // English language (default)
       if (basePath.includes('lessons/outline-de')) {
         return basePath.replace('lessons/outline-de', 'lessons/outline');
+      } else if (basePath.includes('lessons/preparation-de')) {
+        return basePath.replace('lessons/preparation-de', 'lessons/preparation');
       } else if (basePath.includes('-de/')) {
         return basePath.replace(/lessons\/(lesson\d+)-de/, 'lessons/$1');
       } else if (basePath.includes('index.de.html')) {

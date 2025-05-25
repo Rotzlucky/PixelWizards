@@ -3,16 +3,19 @@ layout: lesson
 title: "Quest 1: Wirke deinen ersten Python-Zauber"
 lang: de
 next_lesson: lessons/lesson2/
+order: 1
 objectives:
   - Verstehen, was die Python-Sprache ist und warum sie mächtig für die Erschaffung magischer Spiele ist
-  - Python auf dein magisches Gerät beschwören und deine Zauberumgebung vorbereiten
   - Deinen ersten Zauber wirken: Hallo, Magische Welt!
   - Grundlegende magische Konzepte: Print-Beschwörungen, Schriftrollen (Kommentare) und magische Behälter (Variablen)
+  - Ein interaktives Begrüßungsprogramm erstellen
 ---
 
 # Wirke deinen ersten Python-Zauber
 
-<i class="fas fa-hat-wizard"></i> Sei gegrüßt, zukünftiger Spielezauberer! Bist du bereit, dein magisches Coding-Abenteuer zu beginnen? In dieser ersten Quest werden wir lernen, was die Python-Sprache ist, sie auf dein magisches Gerät beschwören und unseren allerersten Zauber wirken!
+<i class="fas fa-hat-wizard"></i> Sei gegrüßt, zukünftiger Spielezauberer! Bist du bereit, dein magisches Coding-Abenteuer zu beginnen? In dieser ersten Quest werden wir lernen, was die Python-Sprache ist und unseren allerersten Zauber wirken!
+
+*Hinweis: Stelle sicher, dass du die [Vorbereitungslektion]({{ 'lessons/preparation/' | relative_url }}) abgeschlossen hast, bevor du diese Quest beginnst. Du benötigst Python und PyCharm installiert und bereit!*
 
 ## Was ist die Python-Sprache?
 
@@ -23,53 +26,29 @@ Python ist eine der besten Sprachen für Zauberlehrlinge, weil:
 - Sie von Meisterzauberern bei magischen Organisationen wie NASA, Google und YouTube verwendet wird
 - Sie perfekt für die Erschaffung von Spielen, Zauberportalen, magischen Helfern und mehr ist!
 
-## Python auf dein magisches Gerät beschwören
-
-Bevor wir mit dem Zaubern beginnen können, müssen wir Python auf dein magisches Gerät beschwören. Bitte einen Meisterzauberer (Erwachsenen) um Hilfe bei diesem Ritual, falls nötig.
-
-### Schritt 1: Den Python-Zauber herunterladen
-
-1. Begib dich zu [python.org/downloads](https://www.python.org/downloads/)
-2. Klicke auf den großen "Download Python"-Kristall
-3. Führe das magische Installationsritual aus, das heruntergeladen wird
-
-### Schritt 2: Python in dein Gerät einweben
-
-Während des Beschwörungsrituals:
-1. Stelle sicher, dass du das magische Kästchen "Add Python to PATH" ankreuzt
-2. Klicke auf "Install Now"
-3. Warte, bis die magische Einbindung abgeschlossen ist
-
-### Schritt 3: Deine Beschwörung testen
-
-Lass uns sicherstellen, dass Python korrekt in dein magisches Gerät eingewoben ist:
-
-1. Öffne die "Eingabeaufforderung" (Windows) oder das "Terminal" (Mac/Linux) - deine magische Befehlskammer
-2. Beschwöre `python --version` und drücke Enter
-3. Du solltest eine Nachricht wie `Python 3.9.5` in deiner Kristallkugel sehen (die Zahlen können unterschiedlich sein)
-
-Hervorragend! Python ist jetzt in dein magisches Gerät eingewoben!
-
 ## Dein erster Python-Zauber: Hallo, Magische Welt!
 
 Jetzt kommt der aufregende Teil - deinen ersten Zauber wirken! Wir beginnen mit dem klassischen "Hallo, Magische Welt!"-Zauber, den Zauberlehrlinge seit Jahrzehnten als ihren ersten Zauber verwenden.
 
-### Schritt 1: IDLE - Deine Zauberwerkstatt öffnen
+### Schritt 1: PyCharm - Deine mächtige Zauberwerkstatt öffnen
 
-IDLE ist eine einfache Zauberwerkstatt, die mit Python mitgeliefert wird und mit der du Python-Zauber schreiben und wirken kannst.
+PyCharm ist die mächtige Zauberwerkstatt, die wir in der Vorbereitungslektion eingerichtet haben.
 
-1. Suche auf deinem magischen Gerät nach "IDLE" und öffne es
-2. Du siehst eine Kristallkugel namens "Python Shell" mit etwas magischem Text und einer Beschwörungsaufforderung (`>>>`)
+1. Öffne PyCharm aus deinem Programme-Ordner oder Launchpad
+2. Falls du noch kein Projekt geöffnet hast, erstelle ein neues Pure Python-Projekt
+3. Rechtsklicke im Projekt-Panel und erstelle eine neue Python-Datei namens "hallo_welt"
 
 ### Schritt 2: Deine erste Zauberformel schreiben
 
-Beschwöre an der magischen Eingabeaufforderung (`>>>`) folgende Zauberformel genau wie gezeigt und drücke Enter:
+Im PyCharm-Editor beschwöre folgende Zauberformel genau wie gezeigt:
 
 ```python
 print("Hallo, Magische Welt!")
 ```
 
-Du solltest in deiner Kristallkugel sehen:
+Jetzt wirke deinen Zauber, indem du rechts im Editor klickst und "hallo_welt ausführen" wählst oder den grünen Ausführen-Knopf drückst.
+
+Du solltest im Ausgabe-Panel unten sehen:
 
 ```
 Hallo, Magische Welt!
@@ -81,12 +60,15 @@ Hallo, Magische Welt!
 
 Die `print()`-Beschwörung in Python ist wie ein mächtiger Zauberspruch, der Text in deiner Kristallkugel erscheinen lässt. Was auch immer du zwischen die magischen Klammern und Anführungszeichen setzt, wird manifestiert.
 
-Lass uns noch mehr magische Formeln ausprobieren:
+Lass uns noch mehr magische Formeln ausprobieren. Füge diese Zeilen zu deiner Datei hinzu:
 
 ```python
+print("Hallo, Magische Welt!")
 print("Mein Name ist Python-Zauberlehrling!")
 print("Ich lerne, fantastische magische Spiele zu erschaffen!")
 ```
+
+Führe das Programm erneut aus, um alle drei Nachrichten erscheinen zu sehen!
 
 ## Magische Schriftrollen zu deinem Zauber hinzufügen
 
@@ -115,7 +97,7 @@ Versuche, die magischen Werte zu ändern und sieh, was in deiner Kristallkugel g
 
 Jetzt wollen wir alle magischen Konzepte zusammenfügen, um einen Zauber zu erschaffen, der den Benutzer willkommen heißt:
 
-1. Klicke in deiner IDLE-Zauberwerkstatt auf "File" und dann auf "New File"
+1. Erstelle in PyCharm eine neue Python-Datei namens "begruessung"
 2. Beschwöre den folgenden Zaubercode:
 
 ```python
@@ -130,9 +112,9 @@ print("Sei gegrüßt,", zauberer_name, "! Lass uns gemeinsam magische Spiele ers
 print("Du wirst ein mächtiger Spielezauberer werden!")
 ```
 
-3. Bewahre die magische Schriftrolle auf, indem du auf "File" und dann auf "Save As..." klickst und nenne sie `begruessung.py`
-4. Wirke den Zauber, indem du auf "Run" und dann auf "Run Module" klickst (oder F5 drückst)
-5. Wenn du gefragt wirst, gib deinen Zaubernamen ein und drücke Enter
+3. Bewahre die magische Schriftrolle auf (Cmd+S auf Mac)
+4. Wirke den Zauber, indem du rechtsklickst und "begruessung ausführen" wählst oder den grünen Ausführen-Knopf drückst
+5. Wenn du im Ausgabe-Panel gefragt wirst, gib deinen Zaubernamen ein und drücke Enter
 
 Fantastisch! Du hast einen Zauber erschaffen, der mit dem Benutzer interagiert!
 

@@ -3,16 +3,19 @@ layout: lesson
 title: "Quest 1: Casting Your First Python Spell "
 lang: en
 next_lesson: lessons/lesson2/
+order: 1
 objectives:
   - Understand what Python is and why it's great for making games
-  - Set up Python on your computer
   - Write your very first Python program
   - Learn about print statements, comments, and variables
+  - Create an interactive greeting program
 ---
 
 # Your First Python Program
 
-Hello, future game developer! Are you ready to start your coding adventure? In this first lesson, we're going to learn what Python is, set it up on your computer, and write our very first program!
+Hello, future game developer! Are you ready to start your coding adventure? In this first lesson, we're going to learn what Python is and write our very first program! 
+
+*Note: Make sure you've completed the [Preparation lesson]({{ 'lessons/preparation/' | relative_url }}) before starting this quest. You'll need Python and PyCharm installed and ready to go!*
 
 ## What is Python?
 
@@ -23,53 +26,29 @@ Python is one of the best languages for beginners because:
 - It's used by professional programmers at places like NASA, Google, and YouTube
 - It's perfect for making games, websites, robots, and more!
 
-## Setting Up Python
-
-Before we can start coding, we need to install Python on your computer. Ask a grown-up to help you with this part if needed.
-
-### Step 1: Download Python
-
-1. Go to [python.org/downloads](https://www.python.org/downloads/)
-2. Click the big "Download Python" button
-3. Run the installer that downloads
-
-### Step 2: Install Python
-
-During installation:
-1. Make sure to check the box that says "Add Python to PATH"
-2. Click "Install Now"
-3. Wait for the installation to finish
-
-### Step 3: Test Your Installation
-
-Let's make sure Python is installed correctly:
-
-1. Open the "Command Prompt" (Windows) or "Terminal" (Mac/Linux)
-2. Type `python --version` and press Enter
-3. You should see something like `Python 3.9.5` (the numbers might be different)
-
-Great job! Python is now installed on your computer!
-
 ## Your First Python Program: Hello, World!
 
 Now for the exciting part - writing your first program! We'll start with the classic "Hello, World!" program that programmers have been using for decades as their first program.
 
-### Step 1: Open IDLE
+### Step 1: Open PyCharm
 
-IDLE is a simple program that comes with Python that lets you write and run Python code.
+PyCharm is the powerful code editor we set up in the preparation lesson.
 
-1. Search for "IDLE" on your computer and open it
-2. You'll see a window called the "Python Shell" with some text and a prompt (`>>>`)
+1. Open PyCharm from your Applications folder or Launchpad
+2. If you don't have a project open yet, create a new Pure Python project
+3. Right-click in the project panel and create a new Python file called "hello_world"
 
 ### Step 2: Write Your First Line of Code
 
-At the prompt (`>>>`), type the following exactly as shown and press Enter:
+In the PyCharm editor, type the following exactly as shown:
 
 ```python
 print("Hello, World!")
 ```
 
-You should see:
+Now run your program by right-clicking in the editor and selecting "Run 'hello_world'" or by pressing the green play button.
+
+You should see in the output panel at the bottom:
 
 ```
 Hello, World!
@@ -81,12 +60,15 @@ Hello, World!
 
 The `print()` function in Python is like a magical spell that makes text appear on the screen. Whatever you put between the parentheses and quotes will be displayed.
 
-Let's try some more:
+Let's try some more. Add these lines to your file:
 
 ```python
+print("Hello, World!")
 print("My name is Python Programmer!")
 print("I'm learning to make awesome games!")
 ```
+
+Run the program again to see all three messages appear!
 
 ## Adding Comments to Your Code
 
@@ -115,7 +97,7 @@ Try changing the values and see what happens!
 
 Now let's put everything together to make a program that greets the user:
 
-1. In IDLE, click on "File" and then "New File"
+1. In PyCharm, create a new Python file called "greeting"
 2. Type the following code:
 
 ```python
@@ -130,9 +112,9 @@ print("Hello,", player_name, "! Let's start making games together!")
 print("You are going to be an awesome game developer!")
 ```
 
-3. Save the file by clicking "File" then "Save As..." and name it `greeting.py`
-4. Run the program by clicking "Run" then "Run Module" (or press F5)
-5. When asked, type your name and press Enter
+3. Save the file (Cmd+S on Mac)
+4. Run the program by right-clicking and choosing "Run 'greeting'" or pressing the green play button
+5. When asked in the output panel, type your name and press Enter
 
 Amazing! You've created a program that interacts with the user!
 

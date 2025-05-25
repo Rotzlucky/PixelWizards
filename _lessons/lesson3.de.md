@@ -4,6 +4,7 @@ title: "Quest 3: Verzweigte Pfade mit Wenn-Verzauberungen"
 lang: de
 previous_lesson: lessons/lesson2/
 next_lesson: lessons/lesson4/
+order: 3
 objectives:
   - Die mystische Kunst der Wahrheitsmagie beherrschen (Boolesche Werte - Wahr/Falsch)
   - Vergleichsrunen zur Bewertung magischer Bedingungen einsetzen lernen

@@ -2,6 +2,7 @@
 layout: lesson
 title: Questkarte
 lang: de
+order: -1
 ---
 
 # Spellcode Akademie - Questkarte
@@ -12,9 +13,14 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 ## Reich 1: Der Pfad des Zauberlehrlings - Python-Grundlagen
 
+### [Vorbereitung: Deine Programmierumgebung einrichten]({{ 'lessons/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
+- Python auf deinem Mac installieren
+- PyCharm IDE einrichten für die Programmierung
+- Testen, dass alles korrekt funktioniert
+- Mit deinem Programmierarbeitsplatz vertraut werden
+
 ### [Quest 1: Wirke deinen ersten Python-Zauber]({{ 'lessons/lesson1/' | relative_url }}) <i class="fas fa-wand-magic-sparkles"></i>
 - Was ist die Python-Sprache und warum ist sie mächtig für die Erschaffung magischer Spiele?
-- Python auf dein magisches Gerät beschwören und deine Zauberumgebung vorbereiten
 - Deinen ersten Zauber wirken: Hallo, Magische Welt!
 - Grundlegende magische Konzepte: Print-Beschwörungen, magische Schriftrollen (Kommentare) und magische Behälter (Variablen)
 

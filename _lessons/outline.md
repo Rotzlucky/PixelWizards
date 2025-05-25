@@ -2,6 +2,7 @@
 layout: lesson
 title: Quest Map
 lang: en
+order: -1
 ---
 
 # Spellcode Academy - Quest Map
@@ -12,9 +13,14 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 
 ## Realm 1: The Apprentice's Path - Python Basics
 
+### [Preparation: Setting Up Your Programming Environment]({{ 'lessons/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
+- Installing Python on your Mac computer
+- Setting up PyCharm IDE for programming
+- Testing that everything is working correctly
+- Getting familiar with your coding workspace
+
 ### [Quest 1: Casting Your First Python Spell]({{ 'lessons/lesson1/' | relative_url }}) <i class="fas fa-wand-magic-sparkles"></i>
 - What is the Python language and why is it powerful for creating magical games?
-- Summoning Python to your magical device and preparing your spellcasting environment
 - Casting your first spell: Hello, Magical World!
 - Basic magical concepts: print incantations, scrolls (comments), and magical containers (variables)
 

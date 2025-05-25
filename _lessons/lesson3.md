@@ -4,6 +4,7 @@ title: "Quest 3: Forking Paths with If Enchantments"
 lang: en
 previous_lesson: lessons/lesson2/
 next_lesson: lessons/lesson4/
+order: 3
 objectives:
   - Master the mystical art of truth magic (Boolean values - True/False)
   - Learn to use comparison runes to evaluate magical conditions

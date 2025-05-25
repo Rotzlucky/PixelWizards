@@ -5,31 +5,31 @@ layout: default
 <div class="lesson-container">
     <div class="lesson-sidebar scroll-parchment">
         <h3><i class="fas fa-book-open"></i> {{ site.data.translations.lesson.navigation[page.lang] }}</h3>
-        <ul class="lesson-nav">
-            <li>
-                <a href="{{ '/lessons/outline/' | relative_url }}">
-                    <i class="fas fa-map-marked-alt"></i> {{ site.data.translations.nav.lessons[page.lang] }}
-                </a>
-            </li>
-            {% for lesson in site.lessons %}
-                {% if lesson.lang == page.lang %}
-                    {% unless lesson.url contains "outline" %}
-                    {% comment %}
-                    Extract the lesson name and create neutral link
-                    For German lessons, remove the -de suffix to make neutral links
-                    {% endcomment %}
-                    {% assign lesson_url_parts = lesson.url | split: '/' %}
-                    {% assign lesson_slug = lesson_url_parts | last %}
-                    {% if lesson.lang == 'de' %}
-                        {% assign neutral_slug = lesson_slug | replace: '-de', '' %}
-                    {% else %}
-                        {% assign neutral_slug = lesson_slug %}
-                    {% endif %}
-                    <li {% if page.url == lesson.url %}class="active" {% endif %}>
-                        <a href="{{ 'lessons/' | append: neutral_slug | append: '/' | relative_url }}"><i class="fas fa-scroll"></i> {{ lesson.title }}</a>
-                    </li>
-                    {% endunless %}
+                <ul class="lesson-nav">
+            {% assign sorted_lessons = site.lessons | where: "lang", page.lang | sort: "order" %}
+            {% for lesson in sorted_lessons %}
+                {% comment %}
+                Extract the lesson name and create neutral link
+                For German lessons, remove the -de suffix to make neutral links
+                {% endcomment %}
+                {% assign lesson_url_parts = lesson.url | split: '/' %}
+                {% assign lesson_slug = lesson_url_parts | last %}
+                {% if lesson.lang == 'de' %}
+                    {% assign neutral_slug = lesson_slug | replace: '-de', '' %}
+                {% else %}
+                    {% assign neutral_slug = lesson_slug %}
                 {% endif %}
+                <li {% if page.url == lesson.url %}class="active" {% endif %}>
+                    {% if lesson.url contains "outline" %}
+                        <a href="{{ 'lessons/' | append: neutral_slug | append: '/' | relative_url }}">
+                            <i class="fas fa-map-marked-alt"></i> {{ lesson.title }}
+                        </a>
+                    {% else %}
+                        <a href="{{ 'lessons/' | append: neutral_slug | append: '/' | relative_url }}">
+                            <i class="fas fa-scroll"></i> {{ lesson.title }}
+                        </a>
+                    {% endif %}
+                </li>
             {% endfor %}
         </ul>
     </div>
