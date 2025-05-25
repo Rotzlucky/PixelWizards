@@ -2,7 +2,7 @@
 layout: lesson
 title: "Quest 1: Casting Your First Python Spell "
 lang: en
-next_lesson: lesson2/
+next_lesson: lessons/lesson2/
 objectives:
   - Understand what Python is and why it's great for making games
   - Set up Python on your computer

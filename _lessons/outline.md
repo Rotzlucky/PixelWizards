@@ -18,7 +18,7 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 - Casting your first spell: Hello, Magical World!
 - Basic magical concepts: print incantations, scrolls (comments), and magical containers (variables)
 
-### Quest 2: Magical Containers and Essences <i class="fas fa-flask-potion"></i>
+### [Quest 2: Magical Containers and Essences]({{ 'lessons/lesson2/' | relative_url }}) <i class="fas fa-flask-potion"></i>
 - Understanding different types of magical essences (numbers, text, collections)
 - Creating and using magical containers (variables)
 - Basic arithmancy (math operations)

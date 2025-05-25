@@ -2,7 +2,7 @@
 layout: lesson
 title: "Quest 1: Wirke deinen ersten Python-Zauber"
 lang: de
-next_lesson: lesson2/
+next_lesson: lessons/lesson2/
 objectives:
   - Verstehen, was die Python-Sprache ist und warum sie mächtig für die Erschaffung magischer Spiele ist
   - Python auf dein magisches Gerät beschwören und deine Zauberumgebung vorbereiten

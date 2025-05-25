@@ -2,8 +2,8 @@
 layout: lesson
 title: "Quest 2: Magical Containers and Essences"
 lang: en
-previous_lesson: lesson1/
-next_lesson: lesson3/
+previous_lesson: lessons/lesson1/
+next_lesson: lessons/lesson3/
 objectives:
   - Understand different types of magical essences (numbers, text, collections)
   - Create and use magical containers to store essences (variables)
