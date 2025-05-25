@@ -4,7 +4,7 @@ title: Quest Map
 lang: en
 ---
 
-# PixelWizards Academy - Quest Map
+# Spellcode Academy - Quest Map
 
 <i class="fas fa-map-marked-alt"></i> Welcome to your magical journey through the realm of Python! This quest map reveals all the adventures that await you, from casting your very first Python spell to creating your own enchanted 2D RPG world.
 
@@ -12,7 +12,7 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 
 ## Realm 1: The Apprentice's Path - Python Basics
 
-### [Quest 1: Casting Your First Python Spell](/PixelWizards/lessons/lesson1/) <i class="fas fa-wand-magic-sparkles"></i>
+### [Quest 1: Casting Your First Python Spell](/Spellcode/lessons/lesson1/) <i class="fas fa-wand-magic-sparkles"></i>
 - What is the Python language and why is it powerful for creating magical games?
 - Summoning Python to your magical device and preparing your spellcasting environment
 - Casting your first spell: Hello, Magical World!
@@ -128,4 +128,4 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 
 In the final challenge, you'll combine all the magical knowledge you've gained to create your very own enchanted RPG realm! You'll design magical characters, create a wondrous world, implement magical game mechanics, and share your mystical creation with friends and family.
 
-Ready to begin your magical quest? Head to [Quest 1: Casting Your First Python Spell](/PixelWizards/lessons/lesson1/) and embark on your journey into the enchanted realm of Python wizardry!
+Ready to begin your magical quest? Head to [Quest 1: Casting Your First Python Spell](/Spellcode/lessons/lesson1/) and embark on your journey into the enchanted realm of Python wizardry!

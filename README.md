@@ -45,8 +45,8 @@ You can set up this project locally using either Docker or by installing the dep
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/PixelWizards.git
-   cd PixelWizards
+   git clone https://github.com/yourusername/Spellcode.git
+   cd Spellcode
    ```
 
 2. Build and start the Docker container:
@@ -54,7 +54,7 @@ You can set up this project locally using either Docker or by installing the dep
    docker-compose up
    ```
 
-3. Open your browser and go to `http://localhost:4000/PixelWizards/`
+3. Open your browser and go to `http://localhost:4000/Spellcode/`
 
 > **Note for Linux users:** You might encounter permission issues with the mounted volumes. If this happens, you can fix it by running the Docker container with your user ID: `docker-compose up -d --user "$(id -u):$(id -g)"` or by adjusting the permissions of the generated files after running the container.
 
@@ -70,8 +70,8 @@ You can set up this project locally using either Docker or by installing the dep
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/PixelWizards.git
-   cd PixelWizards
+   git clone https://github.com/yourusername/Spellcode.git
+   cd Spellcode
    ```
 
 2. Install dependencies:
@@ -84,7 +84,7 @@ You can set up this project locally using either Docker or by installing the dep
    bundle exec jekyll serve
    ```
 
-4. Open your browser and go to `http://localhost:4000/PixelWizards/`
+4. Open your browser and go to `http://localhost:4000/Spellcode/`
 
 ## Deploying to GitHub Pages
 
@@ -92,7 +92,7 @@ You can set up this project locally using either Docker or by installing the dep
 2. Push this code to your repository
 3. Go to Settings > Pages
 4. Select the main branch as the source
-5. Your site will be published at `https://yourusername.github.io/PixelWizards/`
+5. Your site will be published at `https://yourusername.github.io/Spellcode/`
 
 ## Contributing
 
@@ -109,7 +109,7 @@ Contributions are welcome! Here are some ways you can help improve this project:
 ### How to Contribute
 
 1. **Fork the repository**: Click the Fork button at the top right of this page
-2. **Clone your fork**: `git clone https://github.com/yourusername/PixelWizards.git`
+2. **Clone your fork**: `git clone https://github.com/yourusername/Spellcode.git`
 3. **Create a new branch**: `git checkout -b feature/your-feature-name`
 4. **Make your changes**: Follow the guidelines below for specific types of contributions
 5. **Test your changes**: See the Testing section below

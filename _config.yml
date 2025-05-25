@@ -1,7 +1,7 @@
 # Site settings for Python Game Tutorial
-title: PixelWizards - Python Game Tutorial for Kids
+title: Spellcode - Python Game Tutorial for Kids
 description: A fun and interactive tutorial to teach Python programming to children through game development
-baseurl: "/PixelWizards" # the subpath of your site
+baseurl: "/Spellcode" # the subpath of your site
 url: "https://rotzlucky.github.io" # the base hostname & protocol for your site
 
 # Build settings

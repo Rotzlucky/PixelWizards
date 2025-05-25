@@ -4,7 +4,7 @@ title: Questkarte
 lang: de
 ---
 
-# PixelWizards Akademie - Questkarte
+# Spellcode Akademie - Questkarte
 
 <i class="fas fa-map-marked-alt"></i> Willkommen zu deiner magischen Reise durch das Reich von Python! Diese Questkarte enthüllt alle Abenteuer, die auf dich warten, vom Wirken deines ersten Python-Zaubers bis zur Erschaffung deiner eigenen verzauberten 2D-RPG-Welt.
 
@@ -12,13 +12,13 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 ## Reich 1: Der Pfad des Zauberlehrlings - Python-Grundlagen
 
-### [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1-de/) <i class="fas fa-wand-magic-sparkles"></i>
+### [Quest 1: Wirke deinen ersten Python-Zauber](/Spellcode/lessons/lesson1-de/) <i class="fas fa-wand-magic-sparkles"></i>
 - Was ist die Python-Sprache und warum ist sie mächtig für die Erschaffung magischer Spiele?
 - Python auf dein magisches Gerät beschwören und deine Zauberumgebung vorbereiten
 - Deinen ersten Zauber wirken: Hallo, Magische Welt!
 - Grundlegende magische Konzepte: Print-Beschwörungen, magische Schriftrollen (Kommentare) und magische Behälter (Variablen)
 
-### [Quest 2: Magische Behälter und Essenzen](/PixelWizards/lessons/lesson2-de/) <i class="fas fa-flask-potion"></i>
+### [Quest 2: Magische Behälter und Essenzen](/Spellcode/lessons/lesson2-de/) <i class="fas fa-flask-potion"></i>
 - Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)
 - Magische Behälter erschaffen und verwenden (Variablen)
 - Grundlegende Arithmantik (mathematische Operationen)
@@ -128,4 +128,4 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 In der finalen Herausforderung wirst du all das magische Wissen, das du erlangt hast, kombinieren, um dein eigenes verzaubertes RPG-Reich zu erschaffen! Du wirst magische Charaktere entwerfen, eine wundersame Welt erschaffen, magische Spielmechaniken implementieren und deine mystische Kreation mit Freunden und Familie teilen.
 
-Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber](/PixelWizards/lessons/lesson1/) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei!
+Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber](/Spellcode/lessons/lesson1/) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei!

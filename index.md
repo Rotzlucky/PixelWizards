@@ -4,7 +4,7 @@ title: Python Game Tutorial for Kids
 lang: en
 ---
 
-# Welcome to the PixelWizards Academy!
+# Welcome to the Spellcode Academy!
 
 ## Embark on a Magical Coding Quest to Create Your Own RPG
 

@@ -4,7 +4,7 @@ title: Python Spiel-Tutorial für Kinder
 lang: de
 ---
 
-# Willkommen in der PixelWizards Akademie!
+# Willkommen in der Spellcode Akademie!
 
 ## Begib dich auf eine magische Coding-Quest und erschaffe dein eigenes RPG
 
