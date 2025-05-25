@@ -48,6 +48,18 @@
     </div>
   </header>
 
+  <section class="hero-banner">
+    <div class="hero-image">
+      <img src="{{ site.baseurl }}/assets/images/spellcode_hero_banner.jpeg" alt="SpellCode - Learn Python Programming" />
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title">{{ site.title }}</h1>
+          <p class="hero-subtitle">{{ site.data.translations.hero.subtitle[page.lang] | default: "Master the Art of Python Programming" }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main class="page-content">
     <div class="wrapper">
       {{ content }}

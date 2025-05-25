@@ -42,9 +42,15 @@ body {
 /* Header */
 .site-header {
   background-color: #6b46a0;
-  padding: 15px 0;
+  padding: 20px 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   border-bottom: 3px solid #ffd700;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-title {
@@ -69,11 +75,13 @@ body {
 
 .site-nav {
   float: right;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .site-nav a {
   color: white;
-  margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -94,8 +102,8 @@ body {
 }
 
 .language-selector {
-  display: inline-block;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .language-selector select {
@@ -118,6 +126,82 @@ body {
 .language-selector select option {
   background-color: white;
   color: #333;
+}
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-bottom: 3px solid #ffd700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(107, 70, 160, 0.8) 0%, 
+    rgba(138, 91, 191, 0.7) 50%, 
+    rgba(255, 125, 0, 0.6) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+  color: white !important;
+  border: none !important;
+  padding: 0 !important;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Garamond', serif;
+  letter-spacing: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hero-subtitle {
+  font-size: 1.4em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  color: #ffd700;
+  font-weight: 500;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7), 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  to {
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7), 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
+  }
 }
 
 /* Main content */
@@ -379,6 +463,18 @@ a:hover {
 
 /* Responsive design */
 @media (max-width: 992px) {
+  .hero-banner {
+    height: 350px;
+  }
+  
+  .hero-title {
+    font-size: 3em;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2em;
+  }
+  
   .lesson-sidebar {
     flex: 0 0 200px;
     padding: 12px;
@@ -399,6 +495,19 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .hero-banner {
+    height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1em;
+  }
+  
   .wrapper {
     padding: 0 10px;
   }
@@ -443,6 +552,23 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+  .hero-banner {
+    height: 250px;
+  }
+  
+  .hero-title {
+    font-size: 2em;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1em;
+  }
+  
+  .hero-content {
+    padding: 15px;
+  }
+  
   .wrapper {
     padding: 0 8px;
   }
@@ -482,6 +608,23 @@ a:hover {
 }
 
 @media (max-width: 360px) {
+  .hero-banner {
+    height: 200px;
+  }
+  
+  .hero-title {
+    font-size: 1.8em;
+    letter-spacing: 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9em;
+  }
+  
+  .hero-content {
+    padding: 10px;
+  }
+  
   .wrapper {
     padding: 0 5px;
   }

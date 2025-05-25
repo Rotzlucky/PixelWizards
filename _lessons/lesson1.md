@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: "Lesson 1: Your First Python Program"
+title: "Quest 1: Casting Your First Python Spell "
 lang: en
 next_lesson: lesson2.html
 objectives:
