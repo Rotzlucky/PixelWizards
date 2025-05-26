@@ -1,6 +1,6 @@
-# Python Game Tutorial for Kids
+# Spellcode Academy - Python Game Tutorial for Kids
 
-A fun and interactive tutorial to teach Python programming to children through game development, culminating in a 2D RPG game.
+A magical and interactive tutorial to teach Python programming to children through game development, culminating in a 2D RPG game.
 
 ## About This Project
 
@@ -9,30 +9,29 @@ This tutorial is designed for children around 10 years old who want to learn pro
 ## Features
 
 - Step-by-step lessons with clear explanations
-- Fun, interactive examples
+- Fun, interactive examples with a magical theme
 - Challenges to reinforce learning
-- **Automated multilingual support** with cookie-based language persistence (English and German)
-- **Smart navigation** that maintains language consistency throughout the site
-- Child-friendly design and language
+- **Direct URL multilingual support** with clean, SEO-friendly URLs (English and German)
+- **Smart language switching** that preserves current page context
+- **Browser language detection** with automatic redirection on first visit
+- Child-friendly design and magical theme
 
 ## Project Structure
 
 - `_config.yml`: Jekyll configuration file with site settings and multilingual configuration
-- `index.md`: Main landing page (English)
-- `index.de.md`: Main landing page (German)
+- `index.md`: Main landing page with language selector
+- `en/index.md`: English homepage
+- `de/index.md`: German homepage
 - `_layouts/`: HTML templates for the site
   - `default.html`: Main layout template with header, footer, and language selector
-  - `lesson.html`: Template for lesson pages with automated language-aware navigation
-- `_includes/`: Reusable components
-  - `language-handler.html`: JavaScript for automatic link conversion and language detection
-  - `link-helper.html`: Helper functions for multilingual link generation
+  - `lesson.html`: Template for lesson pages with language-aware navigation
 - `_data/`: Data files for the site
   - `translations.yml`: Translations for UI elements in different languages
 - `assets/`: CSS, images, and other static files
   - `css/main.css`: Main stylesheet for the site
-- `_lessons/`: Individual lesson files (both English and German versions)
-  - `outline.md` & `outline.de.md`: Lesson outline in English and German
-  - `lesson1.md` & `lesson1.de.md`: First lesson in English and German
+- `_lessons/`: Individual lesson files organized by language
+  - `en/`: English lessons (outline.md, lesson1.md, lesson2.md, etc.)
+  - `de/`: German lessons (outline.md, lesson1.md, lesson2.md, etc.)
 
 ## Setup for Local Development
 
@@ -55,7 +54,7 @@ You can set up this project locally using either Docker or by installing the dep
 
 2. Build and start the Docker container:
    ```
-   docker-compose up
+   docker compose up
    ```
 
 3. Open your browser and go to `http://localhost:4000/Spellcode/`
@@ -90,46 +89,52 @@ You can set up this project locally using either Docker or by installing the dep
 
 4. Open your browser and go to `http://localhost:4000/Spellcode/`
 
-#### Adding Translations
-
-- Create a new file with the language code suffix (e.g., `lesson2.fr.md` for French)
-- **Use neutral links** - write all internal links using neutral English paths like `{{ 'lessons/lesson1/' | relative_url }}` (the system will automatically convert them)
-- Update `_data/translations.yml` to add UI elements in the new language
-- Add the new language to `_config.yml` languages section
-- Update `_includes/language-handler.html` to add language detection rules for the new language
-- Ensure translations are accurate and maintain the original tone
-
 ## Multilingual System
 
-This site features an **automated multilingual system** that requires minimal maintenance while providing an excellent user experience.
+This site features a **direct URL multilingual system** that provides clean, SEO-friendly URLs and excellent user experience.
+
+### URL Structure
+
+The site uses a clean, direct URL approach:
+
+- **Main page:** `/` (language selector)
+- **English content:** `/en/` and `/en/lessons/lesson1/`
+- **German content:** `/de/` and `/de/lessons/lesson1/`
 
 ### How It Works
 
-1. **Content authors write neutral links** using Jekyll's `relative_url` filter
-2. **JavaScript automatically detects** the current page language
-3. **Links are converted** to the appropriate language version on page load
-4. **Cookie stores** user language preference for future visits
-5. **Users stay in their language** when navigating throughout the site
+1. **Direct URLs:** Each language has its own URL path (`/en/` or `/de/`)
+2. **Language switching:** Dropdown preserves current page context when switching languages
+3. **Browser detection:** Automatically redirects to user's preferred language on first visit
+4. **Local storage:** Remembers user's language preference for future visits
+5. **Bookmarkable:** All URLs are directly accessible and shareable
 
-### Writing Content with Neutral Links
+### Writing Content
 
-When creating content, always use neutral English links that will be automatically converted:
+When creating content, always use language-specific links with Jekyll's `relative_url` filter:
 
 ```markdown
-✅ Good (Neutral Links):
-[Quest Map]({{ 'lessons/outline/' | relative_url }})
-[Lesson 1]({{ 'lessons/lesson1/' | relative_url }})
+✅ Good (Language-Specific Links):
+[Quest Map]({{ '/en/lessons/outline/' | relative_url }})
+[Lesson 1]({{ '/en/lessons/lesson1/' | relative_url }})
 
-❌ Avoid (Language-Specific Links):
-[Quest Map]({{ 'lessons/outline-de/' | relative_url }})
-[Lesson 1]({{ 'lessons/lesson1-de/' | relative_url }})
+For German content:
+[Questkarte]({{ '/de/lessons/outline/' | relative_url }})
+[Lektion 1]({{ '/de/lessons/lesson1/' | relative_url }})
 ```
 
 ### Adding New Languages
 
 To add a new language (e.g., Spanish):
 
-1. **Update `_config.yml`:**
+1. **Create directory structure:**
+   ```
+   es/index.md
+   _lessons/es/outline.md
+   _lessons/es/lesson1.md
+   ```
+
+2. **Update `_config.yml`:**
    ```yaml
    languages:
      - code: en
@@ -144,7 +149,7 @@ To add a new language (e.g., Spanish):
        flag: 🇪🇸
    ```
 
-2. **Update `_data/translations.yml`:**
+3. **Update `_data/translations.yml`:**
    ```yaml
    nav:
      lessons:
@@ -153,19 +158,21 @@ To add a new language (e.g., Spanish):
        es: "Lecciones"
    ```
 
-3. **Update `_includes/language-handler.html`:**
-   Add language detection and conversion rules for Spanish files (`.es` suffix)
+4. **Create content files with proper permalinks:**
+   ```yaml
+   ---
+   layout: lesson
+   title: "Lección 1"
+   lang: es
+   permalink: /es/lessons/lesson1/
+   ---
+   ```
 
-4. **Create content files:**
-   - `index.es.md`
-   - `lesson1.es.md`
-   - etc.
+### File Organization
 
-### File Naming Convention
-
-- **English:** `lesson1.md`, `outline.md`, `index.md`
-- **German:** `lesson1.de.md`, `outline.de.md`, `index.de.md`
-- **Spanish:** `lesson1.es.md`, `outline.es.md`, `index.es.md`
+- **English:** `en/index.md`, `_lessons/en/lesson1.md`
+- **German:** `de/index.md`, `_lessons/de/lesson1.md`
+- **Spanish:** `es/index.md`, `_lessons/es/lesson1.md`
 
 ## License
 

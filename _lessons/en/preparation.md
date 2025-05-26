@@ -2,7 +2,8 @@
 layout: lesson
 title: "Preparation: Setting Up Your Programming Environment"
 lang: en
-next_lesson: lessons/lesson1/
+permalink: /en/lessons/preparation/
+next_lesson: /en/lessons/lesson1/
 order: 0
 objectives:
   - Install Python on your Mac computer

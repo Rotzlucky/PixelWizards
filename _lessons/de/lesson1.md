@@ -2,7 +2,8 @@
 layout: lesson
 title: "Quest 1: Wirke deinen ersten Python-Zauber"
 lang: de
-next_lesson: lessons/lesson2/
+permalink: /de/lessons/lesson1/
+next_lesson: /de/lessons/lesson2/
 order: 1
 objectives:
   - Verstehen, was die Python-Sprache ist und warum sie mächtig für die Erschaffung magischer Spiele ist
@@ -15,7 +16,7 @@ objectives:
 
 <i class="fas fa-hat-wizard"></i> Sei gegrüßt, zukünftiger Spielezauberer! Bist du bereit, dein magisches Coding-Abenteuer zu beginnen? In dieser ersten Quest werden wir lernen, was die Python-Sprache ist und unseren allerersten Zauber wirken!
 
-*Hinweis: Stelle sicher, dass du die [Vorbereitungslektion]({{ 'lessons/preparation/' | relative_url }}) abgeschlossen hast, bevor du diese Quest beginnst. Du benötigst Python und PyCharm installiert und bereit!*
+*Hinweis: Stelle sicher, dass du die [Vorbereitungslektion](/de/lessons/preparation/) abgeschlossen hast, bevor du diese Quest beginnst. Du benötigst Python und PyCharm installiert und bereit!*
 
 ## Was ist die Python-Sprache?
 

@@ -17,25 +17,59 @@
   <div class="game-background"></div>
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="{{ '/' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
+              {% if page.lang %}
+          <a class="site-title" href="{{ '/' | append: page.lang | append: '/' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
+        {% else %}
+          <a class="site-title" href="{{ '/' | relative_url }}"><i class="fas fa-hat-wizard"></i> {{ site.title }}</a>
+        {% endif %}
       <nav class="site-nav">
-        <a href="{{ 'lessons/outline/' | relative_url }}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
-        <div class="language-selector">
-          <select id="language-dropdown" onchange="changeLanguage(this.value)">
-            {% for lang in site.languages %}
-              <option value="{{ lang.code }}" {% if lang.code == page.lang %}selected{% endif %}>
-                {{ lang.flag }} {{ lang.name }}
-              </option>
-            {% endfor %}
-          </select>
-        </div>
-
-        {% include language-handler.html %}
+        {% if page.lang %}
+          <a href="{{ '/' | append: page.lang | append: '/lessons/outline/' | relative_url }}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
+          <div class="language-selector">
+            <select id="language-dropdown" onchange="switchLanguage(this.value)">
+              {% for lang in site.languages %}
+                <option value="{{ lang.code }}" {% if lang.code == page.lang %}selected{% endif %}>
+                  {{ lang.flag }} {{ lang.name }}
+                </option>
+              {% endfor %}
+            </select>
+          </div>
+        {% endif %}
       </nav>
     </div>
   </header>
   
-  {% include link-helper.html %}
+  <script>
+    // Simple language switching
+    function switchLanguage(targetLang) {
+      const currentPath = window.location.pathname;
+      const baseUrl = '{{ site.baseurl }}';
+      let newPath;
+      
+      // Transform current path to target language
+      if (currentPath.includes('/en/')) {
+        newPath = currentPath.replace('/en/', `/${targetLang}/`);
+      } else if (currentPath.includes('/de/')) {
+        newPath = currentPath.replace('/de/', `/${targetLang}/`);
+      } else {
+        // If on root, go to target language home
+        newPath = `${baseUrl}/${targetLang}/`;
+      }
+      
+      // Save preference and navigate
+      localStorage.setItem('spellcode-language', targetLang);
+      window.location.href = newPath;
+    }
+    
+    // Set dropdown to current language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const dropdown = document.getElementById('language-dropdown');
+      if (dropdown) {
+        const currentLang = '{{ page.lang }}';
+        dropdown.value = currentLang;
+      }
+    });
+  </script>
 
   <section class="hero-banner">
     <div class="hero-image">

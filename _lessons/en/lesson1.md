@@ -2,7 +2,8 @@
 layout: lesson
 title: "Quest 1: Casting Your First Python Spell "
 lang: en
-next_lesson: lessons/lesson2/
+permalink: /en/lessons/lesson1/
+next_lesson: /en/lessons/lesson2/
 order: 1
 objectives:
   - Understand what Python is and why it's great for making games
@@ -15,7 +16,7 @@ objectives:
 
 Hello, future game developer! Are you ready to start your coding adventure? In this first lesson, we're going to learn what Python is and write our very first program! 
 
-*Note: Make sure you've completed the [Preparation lesson]({{ 'lessons/preparation/' | relative_url }}) before starting this quest. You'll need Python and PyCharm installed and ready to go!*
+*Note: Make sure you've completed the [Preparation lesson](/en/lessons/preparation/) before starting this quest. You'll need Python and PyCharm installed and ready to go!*
 
 ## What is Python?
 

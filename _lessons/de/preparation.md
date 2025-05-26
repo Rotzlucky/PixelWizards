@@ -2,7 +2,8 @@
 layout: lesson
 title: "Vorbereitung: Deine Programmierumgebung einrichten"
 lang: de
-next_lesson: lessons/lesson1/
+permalink: /de/lessons/preparation/
+next_lesson: /de/lessons/lesson1/
 order: 0
 objectives:
   - Python auf deinem Mac installieren

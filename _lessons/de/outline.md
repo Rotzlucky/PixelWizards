@@ -2,6 +2,7 @@
 layout: lesson
 title: Questkarte
 lang: de
+permalink: /de/lessons/outline/
 order: -1
 ---
 
@@ -13,18 +14,18 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 ## Reich 1: Der Pfad des Zauberlehrlings - Python-Grundlagen
 
-### [Vorbereitung: Deine Programmierumgebung einrichten]({{ 'lessons/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
+### [Vorbereitung: Deine Programmierumgebung einrichten]({{ '/de/lessons/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
 - Python auf deinem Mac installieren
 - PyCharm IDE einrichten für die Programmierung
 - Testen, dass alles korrekt funktioniert
 - Mit deinem Programmierarbeitsplatz vertraut werden
 
-### [Quest 1: Wirke deinen ersten Python-Zauber]({{ 'lessons/lesson1/' | relative_url }}) <i class="fas fa-wand-magic-sparkles"></i>
+### [Quest 1: Wirke deinen ersten Python-Zauber]({{ '/de/lessons/lesson1/' | relative_url }}) <i class="fas fa-wand-magic-sparkles"></i>
 - Was ist die Python-Sprache und warum ist sie mächtig für die Erschaffung magischer Spiele?
 - Deinen ersten Zauber wirken: Hallo, Magische Welt!
 - Grundlegende magische Konzepte: Print-Beschwörungen, magische Schriftrollen (Kommentare) und magische Behälter (Variablen)
 
-### [Quest 2: Magische Behälter und Essenzen]({{ 'lessons/lesson2/' | relative_url }}) <i class="fas fa-flask-potion"></i>
+### [Quest 2: Magische Behälter und Essenzen]({{ '/de/lessons/lesson2/' | relative_url }}) <i class="fas fa-flask-potion"></i>
 - Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)
 - Magische Behälter erschaffen und verwenden (Variablen)
 - Grundlegende Arithmantik (mathematische Operationen)
@@ -134,4 +135,4 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 In der finalen Herausforderung wirst du all das magische Wissen, das du erlangt hast, kombinieren, um dein eigenes verzaubertes RPG-Reich zu erschaffen! Du wirst magische Charaktere entwerfen, eine wundersame Welt erschaffen, magische Spielmechaniken implementieren und deine mystische Kreation mit Freunden und Familie teilen.
 
-Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber]({{ 'lessons/lesson1/' | relative_url }}) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei!
+Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber]({{ '/de/lessons/lesson1/' | relative_url }}) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei!

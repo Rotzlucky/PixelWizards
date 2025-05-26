@@ -2,30 +2,23 @@
 layout: default
 ---
 
-<div class="lesson-container">
+<div class="lesson-container" data-page-lang="{{ page.lang }}">
     <div class="lesson-sidebar scroll-parchment">
         <h3><i class="fas fa-book-open"></i> {{ site.data.translations.lesson.navigation[page.lang] }}</h3>
-                <ul class="lesson-nav">
-            {% assign sorted_lessons = site.lessons | where: "lang", page.lang | sort: "order" %}
-            {% for lesson in sorted_lessons %}
-                {% comment %}
-                Extract the lesson name and create neutral link
-                For German lessons, remove the -de suffix to make neutral links
-                {% endcomment %}
-                {% assign lesson_url_parts = lesson.url | split: '/' %}
-                {% assign lesson_slug = lesson_url_parts | last %}
-                {% if lesson.lang == 'de' %}
-                    {% assign neutral_slug = lesson_slug | replace: '-de', '' %}
-                {% else %}
-                    {% assign neutral_slug = lesson_slug %}
-                {% endif %}
+        
+        <!-- Language switching handled by main header dropdown -->
+
+        <ul class="lesson-nav">
+            {% assign current_lang_lessons = site.lessons | where: "lang", page.lang | sort: "order" %}
+            
+            {% for lesson in current_lang_lessons %}
                 <li {% if page.url == lesson.url %}class="active" {% endif %}>
                     {% if lesson.url contains "outline" %}
-                        <a href="{{ 'lessons/' | append: neutral_slug | append: '/' | relative_url }}">
+                        <a href="{{ lesson.url | relative_url }}" class="lesson-link">
                             <i class="fas fa-map-marked-alt"></i> {{ lesson.title }}
                         </a>
                     {% else %}
-                        <a href="{{ 'lessons/' | append: neutral_slug | append: '/' | relative_url }}">
+                        <a href="{{ lesson.url | relative_url }}" class="lesson-link">
                             <i class="fas fa-scroll"></i> {{ lesson.title }}
                         </a>
                     {% endif %}
@@ -54,11 +47,15 @@ layout: default
 
         <div class="lesson-navigation">
             {% if page.previous_lesson %}
-            <a href="{{ page.previous_lesson | relative_url }}" class="prev-lesson"><i class="fas fa-chevron-left"></i> {{ site.data.translations.lesson.previous[page.lang] }}</a>
+                <a href="{{ page.previous_lesson | relative_url }}" class="prev-lesson">
+                    <i class="fas fa-chevron-left"></i> {{ site.data.translations.lesson.previous[page.lang] }}
+                </a>
             {% endif %}
 
             {% if page.next_lesson %}
-            <a href="{{ page.next_lesson | relative_url }}" class="next-lesson">{{ site.data.translations.lesson.next[page.lang] }} <i class="fas fa-chevron-right"></i></a>
+                <a href="{{ page.next_lesson | relative_url }}" class="next-lesson">
+                    {{ site.data.translations.lesson.next[page.lang] }} <i class="fas fa-chevron-right"></i>
+                </a>
             {% endif %}
         </div>
 
@@ -67,3 +64,26 @@ layout: default
         </div>
     </div>
 </div>
+
+
+
+<style>
+.lesson-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.lesson-link:hover {
+    text-decoration: underline;
+}
+
+.lesson-nav li.active {
+    background-color: rgba(212, 175, 55, 0.2);
+    border-radius: 4px;
+}
+
+.lesson-nav li.active .lesson-link {
+    font-weight: bold;
+    color: #D4AF37;
+}
+</style>

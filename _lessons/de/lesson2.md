@@ -2,8 +2,9 @@
 layout: lesson
 title: "Quest 2: Magische Behälter und Essenzen"
 lang: de
-previous_lesson: lessons/lesson1/
-next_lesson: lessons/lesson3/
+permalink: /de/lessons/lesson2/
+previous_lesson: /de/lessons/lesson1/
+next_lesson: /de/lessons/lesson3/
 order: 2
 objectives:
   - Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)

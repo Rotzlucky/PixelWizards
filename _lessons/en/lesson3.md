@@ -2,8 +2,9 @@
 layout: lesson
 title: "Quest 3: Forking Paths with If Enchantments"
 lang: en
-previous_lesson: lessons/lesson2/
-next_lesson: lessons/lesson4/
+permalink: /en/lessons/lesson3/
+previous_lesson: /en/lessons/lesson2/
+next_lesson: /en/lessons/lesson4/
 order: 3
 objectives:
   - Master the mystical art of truth magic (Boolean values - True/False)
