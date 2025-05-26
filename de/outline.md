@@ -2,7 +2,7 @@
 layout: lesson
 title: Questkarte
 lang: de
-permalink: /de/lessons/outline/
+permalink: /de/outline/
 order: -1
 ---
 
@@ -14,7 +14,7 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 ## Reich 1: Der Pfad des Zauberlehrlings - Python-Grundlagen
 
-### [Vorbereitung: Deine Programmierumgebung einrichten]({{ '/de/lessons/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
+### [Vorbereitung: Deine Programmierumgebung einrichten]({{ '/de/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
 - Python auf deinem Mac installieren
 - PyCharm IDE einrichten für die Programmierung
 - Testen, dass alles korrekt funktioniert
@@ -31,13 +31,13 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 - Grundlegende Arithmantik (mathematische Operationen)
 - Weisheit vom Benutzer empfangen
 
-### Quest 3: Verzweigte Pfade mit Wenn-Verzauberungen <i class="fas fa-road-fork"></i>
+### [Quest 3: Verzweigte Pfade mit Wenn-Verzauberungen]({{ '/de/lessons/lesson3/' | relative_url }}) <i class="fas fa-road-fork"></i>
 - Wahrheitsmagie (Boolesche Werte - Wahr/Falsch)
 - Vergleichsrunen (>, <, ==, usw.)
 - If-, else- und elif-Verzauberungen
 - Ein einfaches textbasiertes magisches Abenteuer erschaffen
 
-### Quest 4: Magische Schleifen und Wiederholungen <i class="fas fa-repeat"></i>
+### [Quest 4: Magische Schleifen und Wiederholungen]({{ '/de/lessons/lesson4/' | relative_url }}) <i class="fas fa-repeat"></i>
 - For-Schleifen und While-Schleifen - die zyklischen Zauber
 - Zählen und magische Aktionen wiederholen
 - Mystische Muster und Animationen in deiner Kristallkugel (Konsole) erschaffen
@@ -135,4 +135,4 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 
 In der finalen Herausforderung wirst du all das magische Wissen, das du erlangt hast, kombinieren, um dein eigenes verzaubertes RPG-Reich zu erschaffen! Du wirst magische Charaktere entwerfen, eine wundersame Welt erschaffen, magische Spielmechaniken implementieren und deine mystische Kreation mit Freunden und Familie teilen.
 
-Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber]({{ '/de/lessons/lesson1/' | relative_url }}) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei!
+Bereit, deine magische Quest zu beginnen? Gehe zu [Quest 1: Wirke deinen ersten Python-Zauber]({{ '/de/lessons/lesson1/' | relative_url }}) und begib dich auf deine Reise in das verzauberte Reich der Python-Zauberei! 

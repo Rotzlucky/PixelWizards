@@ -1,0 +1,42 @@
+<!-- Enhanced code block with copy functionality -->
+<div class="code-block-container">
+    {% if include.title %}
+    <div class="code-block-header">
+        <span class="code-title">{{ include.title }}</span>
+        <button class="copy-btn" onclick="copyCode(this)" title="Copy code">
+            <i class="fas fa-copy"></i>
+        </button>
+    </div>
+    {% endif %}
+    
+    <div class="code-block">
+        <pre><code class="language-{{ include.language | default: 'python' }}">{{ include.code }}</code></pre>
+    </div>
+    
+    {% if include.explanation %}
+    <div class="code-explanation">
+        <i class="fas fa-info-circle"></i>
+        <span>{{ include.explanation }}</span>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function copyCode(button) {
+    const codeBlock = button.closest('.code-block-container').querySelector('code');
+    const text = codeBlock.textContent;
+    
+    navigator.clipboard.writeText(text).then(function() {
+        const originalIcon = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-check"></i>';
+        button.style.color = '#28a745';
+        
+        setTimeout(function() {
+            button.innerHTML = originalIcon;
+            button.style.color = '';
+        }, 2000);
+    });
+}
+</script>
+
+ 

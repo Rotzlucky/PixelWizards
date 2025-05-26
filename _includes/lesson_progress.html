@@ -1,0 +1,143 @@
+<!-- Compact Lesson Progress Tracker -->
+<div class="lesson-progress-compact">
+    <div class="progress-header" onclick="toggleProgressDetails()">
+        <h4><i class="fas fa-chart-line"></i> Progress <i class="fas fa-chevron-down toggle-icon" id="progress-toggle"></i></h4>
+    </div>
+    
+    <div class="progress-stats-compact">
+        <div class="stat-compact">
+            <span class="stat-icon">🏆</span>
+            <span class="stat-number" id="completed-lessons">0</span>
+        </div>
+        <div class="stat-compact">
+            <span class="stat-icon">⭐</span>
+            <span class="stat-number" id="total-xp">0</span>
+        </div>
+        <div class="stat-compact">
+            <span class="stat-icon">🔥</span>
+            <span class="stat-number" id="streak-days">0</span>
+        </div>
+    </div>
+    
+    <div class="progress-details" id="progress-details" style="display: none;">
+        <div class="stat-labels">
+            <small>Quests • XP • Streak</small>
+        </div>
+        <div class="achievement-showcase">
+            <h5><i class="fas fa-medal"></i> Recent Achievements</h5>
+            <div class="achievements-list" id="achievements-list">
+                <!-- Achievements will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleProgressDetails() {
+    const details = document.getElementById('progress-details');
+    const toggle = document.getElementById('progress-toggle');
+    
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        toggle.classList.remove('fa-chevron-down');
+        toggle.classList.add('fa-chevron-up');
+    } else {
+        details.style.display = 'none';
+        toggle.classList.remove('fa-chevron-up');
+        toggle.classList.add('fa-chevron-down');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateProgressStats();
+    displayAchievements();
+});
+
+function updateProgressStats() {
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+    // Filter out special pages (outline, preparation) from completed lessons count
+    const regularCompletedLessons = completedLessons.filter(lesson => 
+        lesson.includes('/lesson') && !lesson.includes('outline') && !lesson.includes('preparation')
+    );
+    const totalXP = regularCompletedLessons.length * 100; // 100 XP per lesson
+    const streakDays = calculateStreak();
+    
+    document.getElementById('completed-lessons').textContent = regularCompletedLessons.length;
+    document.getElementById('total-xp').textContent = totalXP;
+    document.getElementById('streak-days').textContent = streakDays;
+}
+
+function calculateStreak() {
+    const completionDates = JSON.parse(localStorage.getItem('completionDates') || '[]');
+    if (completionDates.length === 0) return 0;
+    
+    const today = new Date().toDateString();
+    const sortedDates = completionDates.sort((a, b) => new Date(b) - new Date(a));
+    
+    let streak = 0;
+    let currentDate = new Date();
+    
+    for (let dateStr of sortedDates) {
+        const date = new Date(dateStr);
+        const diffTime = currentDate - date;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        
+        if (diffDays <= 1) {
+            streak++;
+            currentDate = date;
+        } else {
+            break;
+        }
+    }
+    
+    return streak;
+}
+
+function displayAchievements() {
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+    // Filter out special pages for achievement calculations
+    const regularCompletedLessons = completedLessons.filter(lesson => 
+        lesson.includes('/lesson') && !lesson.includes('outline') && !lesson.includes('preparation')
+    );
+    const achievements = [];
+    
+    // Define achievements based on regular lessons only
+    if (regularCompletedLessons.length >= 1) {
+        achievements.push({ icon: '🌟', title: 'First Steps', description: 'Completed your first quest!' });
+    }
+    if (regularCompletedLessons.length >= 5) {
+        achievements.push({ icon: '🔥', title: 'Getting Warmed Up', description: 'Completed 5 quests!' });
+    }
+    if (regularCompletedLessons.length >= 10) {
+        achievements.push({ icon: '⚡', title: 'Lightning Learner', description: 'Completed 10 quests!' });
+    }
+    if (calculateStreak() >= 3) {
+        achievements.push({ icon: '📅', title: 'Consistent Coder', description: '3-day learning streak!' });
+    }
+    
+    const achievementsList = document.getElementById('achievements-list');
+    if (achievements.length === 0) {
+        achievementsList.innerHTML = '<p class="no-achievements">Complete your first quest to earn achievements!</p>';
+    } else {
+        achievementsList.innerHTML = achievements.map(achievement => `
+            <div class="achievement-item">
+                <span class="achievement-icon">${achievement.icon}</span>
+                <div class="achievement-text">
+                    <strong>${achievement.title}</strong>
+                    <small>${achievement.description}</small>
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
+// Update progress when lessons are completed
+window.addEventListener('storage', function(e) {
+    if (e.key === 'completedLessons') {
+        updateProgressStats();
+        displayAchievements();
+    }
+});
+</script>
+
+ 

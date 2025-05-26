@@ -8,7 +8,13 @@ nav:
   lessons:
     en: "Lessons"
     de: "Quests"
-  
+  home:
+    en: "Home"
+    de: "Startseite"
+  about:
+    en: "About"
+    de: "Über uns"
+
 # Language flags and names are defined in _config.yml under 'languages'
 
 # Footer
@@ -31,3 +37,87 @@ lesson:
   next:
     en: "Next Lesson"
     de: "Nächste Quest"
+  difficulty:
+    en: "Difficulty"
+    de: "Schwierigkeit"
+  xp_gained:
+    en: "XP Gained"
+    de: "EP erhalten"
+  mark_complete:
+    en: "Mark Quest Complete"
+    de: "Quest als abgeschlossen markieren"
+  quest_completed:
+    en: "Quest Completed!"
+    de: "Quest abgeschlossen!"
+  progress:
+    en: "Quest %{current} of %{total}"
+    de: "Quest %{current} von %{total}"
+
+# Code blocks and challenges
+code:
+  copy_code:
+    en: "Copy code"
+    de: "Code kopieren"
+  copied:
+    en: "Copied!"
+    de: "Kopiert!"
+  challenges:
+    en: "Practice Challenges"
+    de: "Übungsaufgaben"
+  hint:
+    en: "Need a hint?"
+    de: "Brauchst du einen Hinweis?"
+  try_it:
+    en: "Try it yourself"
+    de: "Probiere es selbst aus"
+
+# Common UI elements
+ui:
+  loading:
+    en: "Loading..."
+    de: "Lädt..."
+  error:
+    en: "Something went wrong"
+    de: "Etwas ist schiefgelaufen"
+  success:
+    en: "Success!"
+    de: "Erfolgreich!"
+  warning:
+    en: "Warning"
+    de: "Warnung"
+  info:
+    en: "Information"
+    de: "Information"
+
+# Game development terms
+gamedev:
+  character:
+    en: "Character"
+    de: "Charakter"
+  player:
+    en: "Player"
+    de: "Spieler"
+  enemy:
+    en: "Enemy"
+    de: "Gegner"
+  level:
+    en: "Level"
+    de: "Level"
+  score:
+    en: "Score"
+    de: "Punkte"
+  health:
+    en: "Health"
+    de: "Gesundheit"
+  magic:
+    en: "Magic"
+    de: "Magie"
+  spell:
+    en: "Spell"
+    de: "Zauber"
+  quest:
+    en: "Quest"
+    de: "Quest"
+  adventure:
+    en: "Adventure"
+    de: "Abenteuer"

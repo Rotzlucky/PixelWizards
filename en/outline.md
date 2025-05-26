@@ -2,7 +2,7 @@
 layout: lesson
 title: Quest Map
 lang: en
-permalink: /en/lessons/outline/
+permalink: /en/outline/
 order: -1
 ---
 
@@ -14,7 +14,7 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 
 ## Realm 1: The Apprentice's Path - Python Basics
 
-### [Preparation: Setting Up Your Programming Environment]({{ '/en/lessons/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
+### [Preparation: Setting Up Your Programming Environment]({{ '/en/preparation/' | relative_url }}) <i class="fas fa-tools"></i>
 - Installing Python on your Mac computer
 - Setting up PyCharm IDE for programming
 - Testing that everything is working correctly
@@ -31,13 +31,13 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 - Basic arithmancy (math operations)
 - Receiving wisdom from the user
 
-### Quest 3: Forking Paths with If Enchantments <i class="fas fa-road-fork"></i>
+### [Quest 3: Forking Paths with If Enchantments]({{ '/en/lessons/lesson3/' | relative_url }}) <i class="fas fa-road-fork"></i>
 - Truth magic (Boolean values - True/False)
 - Comparison runes (>, <, ==, etc.)
 - If, else, and elif enchantments
 - Creating a simple text-based magical adventure
 
-### Quest 4: Magical Loops and Repetition <i class="fas fa-repeat"></i>
+### [Quest 4: Magical Loops and Repetition]({{ '/en/lessons/lesson4/' | relative_url }}) <i class="fas fa-repeat"></i>
 - For loops and while loops - the cyclical spells
 - Counting and repeating magical actions
 - Creating mystical patterns and animations in your crystal ball (console)
@@ -135,4 +135,4 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 
 In the final challenge, you'll combine all the magical knowledge you've gained to create your very own enchanted RPG realm! You'll design magical characters, create a wondrous world, implement magical game mechanics, and share your mystical creation with friends and family.
 
-Ready to begin your magical quest? Head to [Quest 1: Casting Your First Python Spell]({{ '/en/lessons/lesson1/' | relative_url }}) and embark on your journey into the enchanted realm of Python wizardry!
+Ready to begin your magical quest? Head to [Quest 1: Casting Your First Python Spell]({{ '/en/lessons/lesson1/' | relative_url }}) and embark on your journey into the enchanted realm of Python wizardry! 

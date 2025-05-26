@@ -1,15 +1,27 @@
 ---
 layout: lesson
-title: "Quest 1: Casting Your First Python Spell "
+title: "Quest 1: Casting Your First Python Spell"
 lang: en
 permalink: /en/lessons/lesson1/
 next_lesson: /en/lessons/lesson2/
 order: 1
+difficulty: 1
+xp: 150
 objectives:
   - Understand what Python is and why it's great for making games
   - Write your very first Python program
   - Learn about print statements, comments, and variables
   - Create an interactive greeting program
+challenges:
+  - title: "Personalize Your Greeting"
+    description: "Modify the greeting program to also ask for the user's age and favorite color, then create a personalized message."
+    hint: "Use multiple input() statements and combine the variables in your print statement."
+  - title: "ASCII Art Magic"
+    description: "Create a simple picture using print statements with special characters."
+    hint: "Try using characters like *, |, -, and / to draw shapes."
+  - title: "Story Starter"
+    description: "Create a program that asks for a character name, place, and object, then uses those to start a magical story."
+    hint: "Use f-strings or comma-separated values in print() to combine the variables."
 ---
 
 # Your First Python Program

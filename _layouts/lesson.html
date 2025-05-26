@@ -6,30 +6,83 @@ layout: default
     <div class="lesson-sidebar scroll-parchment">
         <h3><i class="fas fa-book-open"></i> {{ site.data.translations.lesson.navigation[page.lang] }}</h3>
         
-        <!-- Language switching handled by main header dropdown -->
-
-        <ul class="lesson-nav">
-            {% assign current_lang_lessons = site.pages | where: "lang", page.lang | where: "layout", "lesson" | sort: "order" %}
-            
-            {% for lesson in current_lang_lessons %}
-                <li {% if page.url == lesson.url %}class="active" {% endif %}>
-                    {% if lesson.url contains "outline" %}
-                        <a href="{{ lesson.url | relative_url }}" class="lesson-link">
-                            <i class="fas fa-map-marked-alt"></i> {{ lesson.title }}
-                        </a>
-                    {% else %}
-                        <a href="{{ lesson.url | relative_url }}" class="lesson-link">
-                            <i class="fas fa-scroll"></i> {{ lesson.title }}
-                        </a>
-                    {% endif %}
-                </li>
+        <!-- Include progress tracker -->
+        {% include lesson_progress.html %}
+        
+        <!-- Progress indicator -->
+        <div class="quest-progress">
+            {% assign all_lessons = site.pages | where: "lang", page.lang | where: "layout", "lesson" | sort: "order" %}
+            {% assign regular_lessons = all_lessons | where_exp: "lesson", "lesson.url contains '/lesson'" %}
+            {% assign total_lessons = regular_lessons.size %}
+            {% assign current_index = 0 %}
+            {% for lesson in regular_lessons %}
+                {% if page.url == lesson.url %}
+                    {% assign current_index = forloop.index %}
+                    {% break %}
+                {% endif %}
             {% endfor %}
-        </ul>
+            
+            {% if current_index > 0 %}
+            <div class="progress-bar">
+                {% assign progress_percent = current_index | times: 100 | divided_by: total_lessons %}
+                <div class="progress-fill" style="width: {{ progress_percent }}%"></div>
+            </div>
+            <small>Quest {{ current_index }} of {{ total_lessons }}</small>
+            {% endif %}
+        </div>
+
+        <!-- Special navigation items -->
+        <div class="special-nav">
+            <h4><i class="fas fa-compass"></i> Navigation</h4>
+            <ul class="nav-list">
+                {% assign all_pages = site.pages | where: "lang", page.lang %}
+                {% assign special_pages = all_pages | where_exp: "page_item", "page_item.url contains 'outline' or page_item.url contains 'preparation'" | sort: "order" %}
+                {% for special_page in special_pages %}
+                    <li {% if page.url == special_page.url %}class="active" {% endif %}>
+                        {% if special_page.url contains "outline" %}
+                            <a href="{{ special_page.url | relative_url }}" class="lesson-link special-link">
+                                <i class="fas fa-map-marked-alt"></i> {{ special_page.title }}
+                            </a>
+                        {% elsif special_page.url contains "preparation" %}
+                            <a href="{{ special_page.url | relative_url }}" class="lesson-link special-link">
+                                <i class="fas fa-tools"></i> {{ special_page.title }}
+                            </a>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Regular lesson navigation -->
+        <div class="lesson-nav-section">
+            <h4><i class="fas fa-scroll"></i> Learning Quests</h4>
+            <ul class="lesson-nav">
+                {% for lesson in regular_lessons %}
+                    <li {% if page.url == lesson.url %}class="active" {% endif %}>
+                        <a href="{{ lesson.url | relative_url }}" class="lesson-link">
+                            <i class="fas fa-magic"></i> {{ lesson.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 
     <div class="lesson-content parchment">
         <div class="quest-header">
             <h1><i class="fas fa-dungeon"></i> {{ page.title }}</h1>
+            {% if page.difficulty %}
+                <div class="difficulty-indicator">
+                    <span class="difficulty-label">Difficulty:</span>
+                    {% for i in (1..5) %}
+                        {% if i <= page.difficulty %}
+                            <i class="fas fa-star difficulty-star filled"></i>
+                        {% else %}
+                            <i class="fas fa-star difficulty-star"></i>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
 
         {% if page.objectives %}
@@ -45,6 +98,25 @@ layout: default
 
         {{ content }}
 
+        <!-- Code challenges section -->
+        {% if page.challenges %}
+        <div class="code-challenges">
+            <h3><i class="fas fa-code"></i> Practice Challenges</h3>
+            {% for challenge in page.challenges %}
+            <div class="challenge-card">
+                <h4>{{ challenge.title }}</h4>
+                <p>{{ challenge.description }}</p>
+                {% if challenge.hint %}
+                <details class="challenge-hint">
+                    <summary><i class="fas fa-lightbulb"></i> Need a hint?</summary>
+                    <p>{{ challenge.hint }}</p>
+                </details>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
         <div class="lesson-navigation">
             {% if page.previous_lesson %}
                 <a href="{{ page.previous_lesson | relative_url }}" class="prev-lesson">
@@ -59,31 +131,41 @@ layout: default
             {% endif %}
         </div>
 
-        <div class="xp-counter">
-            <i class="fas fa-star"></i> XP Gained: <span class="xp-value">100</span>
+        <div class="lesson-completion">
+            <div class="xp-counter">
+                <i class="fas fa-star"></i> XP Gained: <span class="xp-value">{{ page.xp | default: 100 }}</span>
+            </div>
+            <button class="complete-lesson-btn" onclick="markLessonComplete()">
+                <i class="fas fa-check"></i> Mark Quest Complete
+            </button>
         </div>
     </div>
 </div>
 
-
-
-<style>
-.lesson-link {
-    color: inherit;
-    text-decoration: none;
+<script>
+function markLessonComplete() {
+    const btn = document.querySelector('.complete-lesson-btn');
+    btn.innerHTML = '<i class="fas fa-trophy"></i> Quest Completed!';
+    btn.style.background = '#28a745';
+    btn.disabled = true;
+    
+    // Store completion in localStorage
+    const lessonId = '{{ page.permalink }}';
+    let completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+    if (!completedLessons.includes(lessonId)) {
+        completedLessons.push(lessonId);
+        localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+    }
 }
 
-.lesson-link:hover {
-    text-decoration: underline;
-}
+// Check if lesson is already completed
+document.addEventListener('DOMContentLoaded', function() {
+    const lessonId = '{{ page.permalink }}';
+    const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+    if (completedLessons.includes(lessonId)) {
+        markLessonComplete();
+    }
+});
+</script>
 
-.lesson-nav li.active {
-    background-color: rgba(212, 175, 55, 0.2);
-    border-radius: 4px;
-}
 
-.lesson-nav li.active .lesson-link {
-    font-weight: bold;
-    color: #D4AF37;
-}
-</style>

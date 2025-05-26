@@ -1,0 +1,328 @@
+/* Enhanced Spellcode Academy Styles */
+
+/* Magical animations */
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.8); }
+}
+
+/* Enhanced magical theme */
+.magical-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.magical-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="%23FFD700" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle><circle cx="80" cy="30" r="1" fill="%23FFD700" opacity="0.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/></circle><circle cx="40" cy="70" r="1" fill="%23FFD700" opacity="0.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/></circle></svg>') repeat;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Enhanced code blocks */
+.code-block-enhanced {
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    border: 2px solid #333;
+    border-radius: 12px;
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.code-block-enhanced:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Interactive elements */
+.magical-button {
+    background: linear-gradient(45deg, #D4AF37, #FFD700);
+    border: none;
+    border-radius: 25px;
+    color: #1a1a2e;
+    font-weight: bold;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.magical-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+    animation: glow 2s infinite;
+}
+
+.magical-button:active {
+    transform: translateY(0);
+}
+
+/* Enhanced lesson cards */
+.lesson-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.lesson-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.lesson-card:hover::before {
+    left: 100%;
+}
+
+.lesson-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Progress indicators */
+.progress-ring {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.progress-ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.progress-ring circle {
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.progress-ring .background {
+    stroke: rgba(255, 255, 255, 0.2);
+}
+
+.progress-ring .progress {
+    stroke: #FFD700;
+    stroke-dasharray: 157; /* 2 * π * 25 */
+    stroke-dashoffset: 157;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+/* Magical tooltips */
+.magical-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.magical-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFD700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.magical-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Achievement badges */
+.achievement-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    animation: sparkle 2s infinite;
+}
+
+/* Difficulty indicators */
+.difficulty-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.difficulty-star {
+    width: 16px;
+    height: 16px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.difficulty-star.filled {
+    color: #FFD700;
+    animation: sparkle 1s ease-in-out infinite;
+    animation-delay: calc(var(--star-index) * 0.2s);
+}
+
+/* Enhanced navigation */
+.lesson-nav-enhanced {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.lesson-nav-enhanced .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 8px;
+}
+
+.lesson-nav-enhanced .nav-item:hover {
+    background: rgba(212, 175, 55, 0.2);
+    transform: translateX(8px);
+}
+
+.lesson-nav-enhanced .nav-item.active {
+    background: linear-gradient(45deg, rgba(212, 175, 55, 0.3), rgba(255, 215, 0, 0.2));
+    border-left: 4px solid #FFD700;
+}
+
+/* Code syntax highlighting enhancements */
+.highlight {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.highlight pre {
+    margin: 0;
+    padding: 20px;
+    background: #1e1e1e;
+    overflow-x: auto;
+}
+
+/* Python syntax colors */
+.highlight .k { color: #ff79c6; } /* Keywords */
+.highlight .s { color: #f1fa8c; } /* Strings */
+.highlight .mi { color: #bd93f9; } /* Numbers */
+.highlight .c1 { color: #6272a4; font-style: italic; } /* Comments */
+.highlight .nf { color: #50fa7b; } /* Function names */
+.highlight .nb { color: #8be9fd; } /* Built-ins */
+
+/* Responsive design enhancements */
+@media (max-width: 768px) {
+    .lesson-container {
+        flex-direction: column;
+    }
+    
+    .lesson-sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .magical-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .code-block-enhanced {
+        margin: 10px 0;
+    }
+}
+
+/* Print styles */
+@media print {
+    .lesson-sidebar,
+    .magical-button,
+    .copy-btn {
+        display: none;
+    }
+    
+    .lesson-content {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .code-block-enhanced {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Accessibility enhancements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus indicators for keyboard navigation */
+.magical-button:focus,
+.lesson-nav-enhanced .nav-item:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* Loading states */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(212, 175, 55, 0.3);
+    border-top: 4px solid #D4AF37;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 

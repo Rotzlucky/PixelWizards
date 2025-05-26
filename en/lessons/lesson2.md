@@ -6,11 +6,23 @@ permalink: /en/lessons/lesson2/
 previous_lesson: /en/lessons/lesson1/
 next_lesson: /en/lessons/lesson3/
 order: 2
+difficulty: 2
+xp: 175
 objectives:
   - Understand different types of magical essences (numbers, text, collections)
   - Create and use magical containers to store essences (variables)
   - Practice basic arithmancy (mathematical operations)
   - Learn to receive wisdom from users through input spells
+challenges:
+  - title: "Magic Potion Calculator"
+    description: "Create a program that calculates the total cost of magical ingredients based on quantity and price per item."
+    hint: "Use multiplication to calculate total cost: quantity * price_per_item"
+  - title: "Age in Different Realms"
+    description: "Ask for someone's age in human years, then convert it to dog years (multiply by 7) and cat years (multiply by 5)."
+    hint: "Store the human age in a variable, then create new variables for dog_years and cat_years."
+  - title: "String Spell Combinations"
+    description: "Create a program that combines a first name and last name, then displays them in different magical formats."
+    hint: "Try using .upper(), .lower(), and .title() methods on strings."
 ---
 
 # Magical Containers and Essences

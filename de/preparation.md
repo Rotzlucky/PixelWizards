@@ -1,8 +1,8 @@
 ---
 layout: lesson
-title: "Vorbereitung: Deine Programmierumgebung einrichten"
+title: "Vorbereitung"
 lang: de
-permalink: /de/lessons/preparation/
+permalink: /de/preparation/
 next_lesson: /de/lessons/lesson1/
 order: 0
 objectives:
@@ -200,45 +200,46 @@ Jetzt, da alles funktioniert, lass uns schnell die PyCharm-Oberfläche kennenler
 
 1. **Projekt-Panel** (linke Seite): Zeigt alle deine Dateien und Ordner
 2. **Editor** (Mitte): Wo du deinen Code schreibst
-3. **Tool-Fenster** (unten): Zeigt Ausgabe, Fehler und andere Informationen
+3. **Ausgabe-Panel** (unten): Zeigt die Ergebnisse, wenn du deine Programme ausführst
 4. **Menüleiste** (oben): Enthält alle Befehle und Optionen
 
-### Nützliche Funktionen für Anfänger
+### Wichtige Buttons und Funktionen
 
-1. **Auto-Vervollständigung**: Während du tippst, schlägt PyCharm Code für dich vor
-2. **Fehler-Hervorhebung**: Wenn du einen Fehler machst, unterstreicht PyCharm ihn rot
-3. **Programme ausführen**: Rechtsklicke in deinem Code und wähle "Ausführen", um dein Programm zu testen
-4. **Dateiverwaltung**: Verwende das Projekt-Panel, um deine Code-Dateien zu organisieren
+- **Grüner Play-Button**: Führt dein aktuelles Programm aus
+- **Roter Quadrat-Button**: Stoppt ein laufendes Programm
+- **Datei-Menü**: Neue Dateien erstellen, bestehende öffnen, deine Arbeit speichern
+- **Ausführen-Menü**: Verschiedene Wege, deine Programme auszuführen und zu testen
 
-*[Screenshot-Platzhalter: Beispiele für Auto-Vervollständigung und Fehler-Hervorhebung]*
+### Nützliche Tastenkombinationen
 
-## Häufige Probleme beheben
+- `Cmd + S`: Aktuelle Datei speichern
+- `Cmd + R`: Aktuelles Programm ausführen
+- `Cmd + Z`: Letzte Änderung rückgängig machen
+- `Cmd + Shift + Z`: Wiederholen
 
-Wenn etwas nicht funktioniert, hier sind die häufigsten Lösungen:
+## Fehlerbehebung bei häufigen Problemen
 
-### Python nicht gefunden
-- Stelle sicher, dass du Python 3 installiert hast (nicht Python 2)
-- Versuche `python3 --version` im Terminal zu tippen anstatt `python --version`
+### Wenn Python nicht korrekt installiert wird:
+- Stelle sicher, dass du die richtige Version für Mac heruntergeladen hast
+- Versuche, deinen Computer neu zu starten und das Installationsprogramm erneut auszuführen
+- Überprüfe, dass du genug Speicherplatz auf deiner Festplatte hast
 
-### PyCharm kann Python nicht finden
+### Wenn PyCharm Python nicht finden kann:
 - In PyCharm gehe zu "PyCharm" → "Einstellungen" → "Projekt" → "Python Interpreter"
-- Klicke das Zahnrad-Symbol und "Hinzufügen"
-- Wähle "System Interpreter" und navigiere zu `/usr/bin/python3`
+- Klicke das Zahnrad-Symbol und wähle "Hinzufügen"
+- Wähle "System Interpreter" und durchsuche, um Python zu finden
 
-### Berechtigungsfehler
-- Stelle sicher, dass du dein Mac-Passwort bei der Installation eingegeben hast
-- Versuche Terminal als Administrator auszuführen, falls nötig
+### Wenn du Berechtigungsfehler bekommst:
+- Du musst möglicherweise dein Mac-Passwort bei der Installation eingeben
+- Stelle sicher, dass du als Administrator auf deinem Mac angemeldet bist
 
-## Du bist bereit!
+## Du bist bereit, mit dem Programmieren zu beginnen!
 
-Herzlichen Glückwunsch! Du hast jetzt:
-- ✅ Python installiert und funktionsfähig
-- ✅ PyCharm eingerichtet und konfiguriert
-- ✅ Eine funktionierende Entwicklungsumgebung
-- ✅ Grundkenntnisse der PyCharm-Oberfläche
+Herzlichen Glückwunsch! Du hast jetzt alles eingerichtet, um Python-Programmierung zu lernen. In unserer nächsten Lektion werden wir unser erstes Python-Programm schreiben und unsere Reise zur Erstellung fantastischer Spiele beginnen!
 
-Du bist bereit, Python-Programmierung zu lernen! In der nächsten Lektion werden wir in das Schreiben deiner ersten echten Python-Programme eintauchen und beginnen, das Fundament für die Erstellung fantastischer Spiele zu legen.
+Denk daran:
+- **Python** ist die Programmiersprache, die wir verwenden werden
+- **PyCharm** ist unser Code-Editor, der das Programmieren einfacher macht
+- Du kannst immer zu diesem Setup-Leitfaden zurückkehren, wenn du Hilfe brauchst
 
-Denk daran: Wenn du auf Probleme stößt, mach dir keine Sorgen! Programmier-Setup kann knifflig sein, und sogar erfahrene Programmierer brauchen manchmal Hilfe bei der Installation. Frage einen Erwachsenen, Lehrer oder Freund um Hilfe, wenn du nicht weiterkommst.
-
-**Du bist bereit für dein Programmier-Abenteuer!** 🚀 
+Bereit für dein erstes Programmierabenteuer? Lass uns zu [Quest 1: Wirke deinen ersten Python-Zauber]({{ '/de/lessons/lesson1/' | relative_url }}) gehen! 

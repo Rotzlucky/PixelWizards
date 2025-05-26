@@ -1,8 +1,8 @@
 ---
 layout: lesson
-title: "Preparation: Setting Up Your Programming Environment"
+title: "Preparation"
 lang: en
-permalink: /en/lessons/preparation/
+permalink: /en/preparation/
 next_lesson: /en/lessons/lesson1/
 order: 0
 objectives:
@@ -200,45 +200,46 @@ Now that everything is working, let's quickly learn about the PyCharm interface:
 
 1. **Project Panel** (left side): Shows all your files and folders
 2. **Editor** (center): Where you write your code
-3. **Tool Windows** (bottom): Shows output, errors, and other information
+3. **Output Panel** (bottom): Shows the results when you run your programs
 4. **Menu Bar** (top): Contains all the commands and options
 
-### Useful Features for Beginners
+### Important Buttons and Features
 
-1. **Auto-completion**: As you type, PyCharm will suggest code for you
-2. **Error highlighting**: If you make a mistake, PyCharm will underline it in red
-3. **Running programs**: Right-click in your code and choose "Run" to test your program
-4. **File management**: Use the project panel to organize your code files
+- **Green Play Button**: Runs your current program
+- **Red Square Button**: Stops a running program
+- **File Menu**: Create new files, open existing ones, save your work
+- **Run Menu**: Different ways to run and test your programs
 
-*[Screenshot placeholder: Examples of auto-completion and error highlighting]*
+### Useful Keyboard Shortcuts
+
+- `Cmd + S`: Save your current file
+- `Cmd + R`: Run your current program
+- `Cmd + Z`: Undo your last change
+- `Cmd + Shift + Z`: Redo
 
 ## Troubleshooting Common Issues
 
-If something doesn't work, here are the most common fixes:
+### If Python doesn't install correctly:
+- Make sure you downloaded the right version for Mac
+- Try restarting your computer and running the installer again
+- Check that you have enough space on your hard drive
 
-### Python Not Found
-- Make sure you installed Python 3 (not Python 2)
-- Try typing `python3 --version` in Terminal instead of `python --version`
-
-### PyCharm Can't Find Python
+### If PyCharm can't find Python:
 - In PyCharm, go to "PyCharm" → "Preferences" → "Project" → "Python Interpreter"
-- Click the gear icon and "Add"
-- Choose "System Interpreter" and browse to `/usr/bin/python3`
+- Click the gear icon and choose "Add"
+- Select "System Interpreter" and browse to find Python
 
-### Permission Errors
-- Make sure you entered your Mac password when installing
-- Try running Terminal as an administrator if needed
+### If you get permission errors:
+- You might need to enter your Mac password when installing
+- Make sure you're logged in as an administrator on your Mac
 
-## You're All Set!
+## You're Ready to Start Programming!
 
-Congratulations! You now have:
-- ✅ Python installed and working
-- ✅ PyCharm set up and configured
-- ✅ A working development environment
-- ✅ Basic knowledge of the PyCharm interface
+Congratulations! You now have everything set up to start learning Python programming. In our next lesson, we'll write our very first Python program and start our journey toward creating amazing games!
 
-You're ready to start learning Python programming! In the next lesson, we'll dive into writing your first real Python programs and start building the foundation for creating amazing games.
+Remember:
+- **Python** is the programming language we'll use
+- **PyCharm** is our code editor that makes programming easier
+- You can always come back to this setup guide if you need help
 
-Remember: if you run into any problems, don't worry! Programming setup can be tricky, and even experienced programmers sometimes need help with installation. Ask a parent, teacher, or friend for help if you get stuck.
-
-**You're ready to start your programming adventure!** 🚀 
+Ready for your first programming adventure? Let's head to [Quest 1: Casting Your First Python Spell]({{ '/en/lessons/lesson1/' | relative_url }})! 
