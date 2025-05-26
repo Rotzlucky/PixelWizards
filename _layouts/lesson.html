@@ -9,7 +9,7 @@ layout: default
         <!-- Language switching handled by main header dropdown -->
 
         <ul class="lesson-nav">
-            {% assign current_lang_lessons = site.lessons | where: "lang", page.lang | sort: "order" %}
+            {% assign current_lang_lessons = site.pages | where: "lang", page.lang | where: "layout", "lesson" | sort: "order" %}
             
             {% for lesson in current_lang_lessons %}
                 <li {% if page.url == lesson.url %}class="active" {% endif %}>

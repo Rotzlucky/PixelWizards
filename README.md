@@ -20,8 +20,12 @@ This tutorial is designed for children around 10 years old who want to learn pro
 
 - `_config.yml`: Jekyll configuration file with site settings and multilingual configuration
 - `index.md`: Main landing page with language selector
-- `en/index.md`: English homepage
-- `de/index.md`: German homepage
+- `en/`: English content directory
+  - `index.md`: English homepage
+  - `lessons/`: English lesson files (outline.md, lesson1.md, lesson2.md, etc.)
+- `de/`: German content directory
+  - `index.md`: German homepage
+  - `lessons/`: German lesson files (outline.md, lesson1.md, lesson2.md, etc.)
 - `_layouts/`: HTML templates for the site
   - `default.html`: Main layout template with header, footer, and language selector
   - `lesson.html`: Template for lesson pages with language-aware navigation
@@ -29,9 +33,6 @@ This tutorial is designed for children around 10 years old who want to learn pro
   - `translations.yml`: Translations for UI elements in different languages
 - `assets/`: CSS, images, and other static files
   - `css/main.css`: Main stylesheet for the site
-- `_lessons/`: Individual lesson files organized by language
-  - `en/`: English lessons (outline.md, lesson1.md, lesson2.md, etc.)
-  - `de/`: German lessons (outline.md, lesson1.md, lesson2.md, etc.)
 
 ## Setup for Local Development
 
@@ -129,9 +130,11 @@ To add a new language (e.g., Spanish):
 
 1. **Create directory structure:**
    ```
-   es/index.md
-   _lessons/es/outline.md
-   _lessons/es/lesson1.md
+   es/
+   ├── index.md
+   └── lessons/
+       ├── outline.md
+       └── lesson1.md
    ```
 
 2. **Update `_config.yml`:**
@@ -170,9 +173,9 @@ To add a new language (e.g., Spanish):
 
 ### File Organization
 
-- **English:** `en/index.md`, `_lessons/en/lesson1.md`
-- **German:** `de/index.md`, `_lessons/de/lesson1.md`
-- **Spanish:** `es/index.md`, `_lessons/es/lesson1.md`
+- **English:** `en/index.md`, `en/lessons/lesson1.md`
+- **German:** `de/index.md`, `de/lessons/lesson1.md`
+- **Spanish:** `es/index.md`, `es/lessons/lesson1.md`
 
 ## License
 

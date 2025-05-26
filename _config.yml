@@ -42,12 +42,7 @@ languages:
     flag: 🇩🇪
     locale: de_DE
 
-# Collections configuration
-collections:
-  lessons:
-    output: true
-    sort_by: order
-    permalink: /:collection/:path/
+# No collections needed - using regular pages in language directories
 
 # Default front matter with language-aware settings
 defaults:
