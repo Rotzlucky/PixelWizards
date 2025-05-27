@@ -27,17 +27,9 @@ python test_runner.py
 python test_runner.py /path/to/spellcode/project
 ```
 
-### Optional Enhanced Testing
+### Zero Dependencies Required
 
-For CI/CD integration and detailed reporting, install optional dependencies:
-
-```bash
-# Install optional testing dependencies
-pip install -r requirements-test.txt
-
-# Run pytest-based tests (if available)
-pytest tests/ -v
-```
+The test runner is completely self-contained and requires no external dependencies.
 
 ## Main Test Runner (`test_runner.py`)
 
@@ -189,19 +181,7 @@ Sophisticated link checking that:
 - **Multiple fallback checking** - tries .md extension and /index.md patterns
 - **Precise error reporting** - shows exact link text and target path
 
-## Optional Components
-
-### Pytest Integration (`tests/`)
-
-For enhanced CI/CD integration:
-
-```bash
-# Install optional dependencies
-pip install pytest pytest-html
-
-# Run granular tests
-pytest tests/ -v --html=report.html
-```
+## CI/CD Integration
 
 ### GitHub Actions Workflow
 
