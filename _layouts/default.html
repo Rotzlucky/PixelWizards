@@ -24,7 +24,7 @@
         {% endif %}
       <nav class="site-nav">
         {% if page.lang %}
-          <a href="{{ '/' | append: page.lang | append: '/lessons/outline/' | relative_url }}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
+          <a href="{{ '/' | append: page.lang | append: '/outline/' | relative_url }}" class="quest-button"><i class="fas fa-scroll"></i> {{ site.data.translations.nav.lessons[page.lang] }}</a>
           <div class="language-selector">
             <select id="language-dropdown" onchange="switchLanguage(this.value)">
               {% for lang in site.languages %}

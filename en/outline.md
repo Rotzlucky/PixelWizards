@@ -43,17 +43,17 @@ Each quest builds upon the magical knowledge from previous ones, so it's best to
 - Creating mystical patterns and animations in your crystal ball (console)
 - Crafting a magical number divination game
 
-### Quest 5: Inventory Scrolls and Collections <i class="fas fa-scroll"></i>
-- Creating and using magical inventories (lists)
-- Adding, removing, and transforming inventory items
-- Looping through your collection of magical items
-- Creating a wizard's inventory system for your adventure
+### [Quest 5: Crafting Your Own Spells (Functions)]({{ '/en/lessons/lesson5/' | relative_url }}) <i class="fas fa-magic"></i>
+- Learning to create your own magical functions (spells)
+- Understanding parameters and return values
+- Building a collection of reusable spell components
+- Creating a magical spell library for your adventures
 
-### Quest 6: Spell Scrolls - Creating Reusable Magic <i class="fas fa-book-spells"></i>
-- What are spell scrolls (functions) and why are they essential for wizards?
-- Creating and invoking magical spell scrolls
-- Spell components and returned artifacts (parameters and return values)
-- Crafting a text-based magical quest using your spell collection
+### [Quest 6: Magical Collections and Lists]({{ '/en/lessons/lesson6/' | relative_url }}) <i class="fas fa-list"></i>
+- Mastering the art of creating and managing magical lists
+- Learning to add, remove, and organize magical items
+- Understanding list methods and magical operations
+- Building an inventory system for your magical adventures
 
 ## Realm 2: The Conjurer's Craft - Introduction to Game Development
 

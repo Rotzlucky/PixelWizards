@@ -43,17 +43,17 @@ Jede Quest baut auf dem magischen Wissen der vorherigen auf, daher ist es am bes
 - Mystische Muster und Animationen in deiner Kristallkugel (Konsole) erschaffen
 - Ein magisches Zahlenweissagungsspiel erschaffen
 
-### Quest 5: Inventar-Schriftrollen und Sammlungen <i class="fas fa-scroll"></i>
-- Magische Inventare erschaffen und verwenden (Listen)
-- Inventargegenstände hinzufügen, entfernen und verwandeln
-- Durch deine Sammlung magischer Gegenstände wandern
-- Ein Zauberer-Inventarsystem für dein Abenteuer erschaffen
+### [Quest 5: Erschaffe deine eigenen Zauber (Funktionen)]({{ '/de/lessons/lesson5/' | relative_url }}) <i class="fas fa-magic"></i>
+- Lerne, deine eigenen magischen Funktionen (Zauber) zu erstellen
+- Verstehe Parameter und Rückgabewerte
+- Baue eine Sammlung wiederverwendbarer Zauberkomponenten auf
+- Erstelle eine magische Zauberbibliothek für deine Abenteuer
 
-### Quest 6: Zauberschriftrollen - Wiederverwendbare Magie erschaffen <i class="fas fa-book-spells"></i>
-- Was sind Zauberschriftrollen (Funktionen) und warum sind sie für Zauberer unerlässlich?
-- Magische Zauberschriftrollen erschaffen und beschwören
-- Zauberkomponenten und zurückgegebene Artefakte (Parameter und Rückgabewerte)
-- Ein textbasiertes magisches Abenteuer mit deiner Zaubersammlung erschaffen
+### [Quest 6: Magische Sammlungen und Listen]({{ '/de/lessons/lesson6/' | relative_url }}) <i class="fas fa-list"></i>
+- Meistere die Kunst des Erstellens und Verwaltens magischer Listen
+- Lerne, magische Gegenstände hinzuzufügen, zu entfernen und zu organisieren
+- Verstehe Listenmethoden und magische Operationen
+- Baue ein Inventarsystem für deine magischen Abenteuer
 
 ## Reich 2: Die Kunst des Beschwörers - Einführung in die Spieleentwicklung
 
