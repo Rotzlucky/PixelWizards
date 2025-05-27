@@ -666,13 +666,13 @@ a:hover {
 }
 
 .lesson-nav li.active {
-  background-color: rgba(107, 70, 160, 0.1);
+  background-color: #6b46a0;
   border-radius: 4px;
 }
 
 .lesson-nav li.active .lesson-link {
   font-weight: bold;
-  color: #6b46a0;
+  color: white !important;
 }
 
 .quest-progress {
