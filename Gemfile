@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.3.0"
 gem "minima", "~> 2.5"
 
 # If you want to use GitHub Pages, uncomment the line below
