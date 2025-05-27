@@ -16,7 +16,7 @@ objectives:
 
 <i class="fas fa-hat-wizard"></i> Sei gegrüßt, zukünftiger Spielezauberer! Bist du bereit, dein magisches Coding-Abenteuer zu beginnen? In dieser ersten Quest werden wir lernen, was die Python-Sprache ist und unseren allerersten Zauber wirken!
 
-*Hinweis: Stelle sicher, dass du die [Vorbereitungslektion](/de/lessons/preparation/) abgeschlossen hast, bevor du diese Quest beginnst. Du benötigst Python und PyCharm installiert und bereit!*
+*Hinweis: Stelle sicher, dass du die [Vorbereitungslektion]({{ '/de/preparation/' | relative_url }}) abgeschlossen hast, bevor du diese Quest beginnst. Du benötigst Python und PyCharm installiert und bereit!*
 
 ## Was ist die Python-Sprache?
 

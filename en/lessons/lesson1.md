@@ -28,7 +28,7 @@ challenges:
 
 Hello, future game developer! Are you ready to start your coding adventure? In this first lesson, we're going to learn what Python is and write our very first program! 
 
-*Note: Make sure you've completed the [Preparation lesson](/en/lessons/preparation/) before starting this quest. You'll need Python and PyCharm installed and ready to go!*
+*Note: Make sure you've completed the [Preparation lesson]({{ '/en/preparation/' | relative_url }}) before starting this quest. You'll need Python and PyCharm installed and ready to go!*
 
 ## What is Python?
 

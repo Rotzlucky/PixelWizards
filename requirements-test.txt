@@ -1,0 +1,7 @@
+# Testing dependencies for Spellcode Academy
+# The test runner now uses only built-in Python libraries
+
+# Optional dependencies for enhanced testing (if needed)
+pytest>=7.0.0
+pytest-html>=3.1.0
+coverage>=6.0.0 
