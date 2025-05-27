@@ -1,0 +1,3 @@
+# Vercel specific configuration
+baseurl: ""
+url: "https://spellcode-loy6.vercel.app" 
