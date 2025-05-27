@@ -5,11 +5,23 @@ lang: de
 permalink: /de/lessons/lesson1/
 next_lesson: /de/lessons/lesson2/
 order: 1
+difficulty: 1
+xp: 150
 objectives:
   - Verstehen, was die Python-Sprache ist und warum sie mächtig für die Erschaffung magischer Spiele ist
   - Deinen ersten Zauber wirken: Hallo, Magische Welt!
   - Grundlegende magische Konzepte: Print-Beschwörungen, Schriftrollen (Kommentare) und magische Behälter (Variablen)
   - Ein interaktives Begrüßungsprogramm erstellen
+challenges:
+  - title: "Personalisiere deinen Gruß"
+    description: "Ändere das Begrüßungsprogramm so, dass es auch nach dem Alter und der Lieblingsfarbe des Benutzers fragt und dann eine personalisierte Nachricht erstellt."
+    hint: "Verwende mehrere input()-Anweisungen und kombiniere die Variablen in deiner print-Anweisung."
+  - title: "ASCII-Kunst-Magie"
+    description: "Erstelle ein einfaches Bild mit print-Anweisungen und besonderen Zeichen."
+    hint: "Versuche Zeichen wie *, |, -, und / zu verwenden, um Formen zu zeichnen."
+  - title: "Geschichten-Starter"
+    description: "Erstelle ein Programm, das nach einem Charakternamen, einem Ort und einem Gegenstand fragt und diese dann verwendet, um eine magische Geschichte zu beginnen."
+    hint: "Verwende f-Strings oder kommagetrennte Werte in print(), um die Variablen zu kombinieren."
 ---
 
 # Wirke deinen ersten Python-Zauber

@@ -6,11 +6,23 @@ permalink: /en/lessons/lesson3/
 previous_lesson: /en/lessons/lesson2/
 next_lesson: /en/lessons/lesson4/
 order: 3
+difficulty: 2
+xp: 200
 objectives:
   - Master the mystical art of truth magic (Boolean values - True/False)
   - Learn to use comparison runes to evaluate magical conditions
   - Cast if, else, and elif enchantments to create decision-making spells
   - Create a simple text-based magical adventure with branching paths
+challenges:
+  - title: "Magical Age Verifier"
+    description: "Create a program that checks a person's age and displays different messages for children, teenagers, and adults."
+    hint: "Use if, elif, and else with age comparisons like age < 13, age < 18, etc."
+  - title: "Spell Power Calculator"
+    description: "Create a program that calculates spell power based on wizard experience and spell type."
+    hint: "Use different if conditions for different spell types and experience levels."
+  - title: "Magical Number Guessing Game"
+    description: "Create a game where the computer 'thinks' of a number between 1 and 10 and the user has to guess it."
+    hint: "Use import random and random.randint(1, 10) for the random number, then compare with user input."
 ---
 
 # Forking Paths with If Enchantments

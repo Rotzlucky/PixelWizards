@@ -6,11 +6,23 @@ permalink: /de/lessons/lesson2/
 previous_lesson: /de/lessons/lesson1/
 next_lesson: /de/lessons/lesson3/
 order: 2
+difficulty: 2
+xp: 175
 objectives:
   - Verschiedene Arten von magischen Essenzen verstehen (Zahlen, Text, Sammlungen)
   - Magische Behälter zur Aufbewahrung von Essenzen erschaffen und verwenden (Variablen)
   - Grundlegende Arithmantik praktizieren (mathematische Operationen)
   - Lernen, Weisheit von Benutzern durch Eingabezauber zu empfangen
+challenges:
+  - title: "Magischer Trank-Rechner"
+    description: "Erstelle ein Programm, das die Gesamtkosten magischer Zutaten basierend auf Menge und Preis pro Artikel berechnet."
+    hint: "Verwende Multiplikation zur Berechnung der Gesamtkosten: menge * preis_pro_artikel"
+  - title: "Alter in verschiedenen Reichen"
+    description: "Frage nach dem Alter einer Person in Menschenjahren und wandle es dann in Hundejahre (mal 7) und Katzenjahre (mal 5) um."
+    hint: "Speichere das Menschenalter in einer Variable und erstelle dann neue Variablen für hundejahre und katzenjahre."
+  - title: "Zauberspruch-Kombinationen"
+    description: "Erstelle ein Programm, das Vor- und Nachname kombiniert und sie dann in verschiedenen magischen Formaten anzeigt."
+    hint: "Versuche die Methoden .upper(), .lower() und .title() auf Strings zu verwenden."
 ---
 
 # Magische Behälter und Essenzen

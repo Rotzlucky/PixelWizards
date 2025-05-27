@@ -6,11 +6,23 @@ permalink: /de/lessons/lesson3/
 previous_lesson: /de/lessons/lesson2/
 next_lesson: /de/lessons/lesson4/
 order: 3
+difficulty: 2
+xp: 200
 objectives:
   - Die mystische Kunst der Wahrheitsmagie beherrschen (Boolesche Werte - Wahr/Falsch)
   - Vergleichsrunen zur Bewertung magischer Bedingungen einsetzen lernen
   - Wenn-, Sonst- und SonstWenn-Verzauberungen wirken, um entscheidungsfreudige Zauber zu erschaffen
   - Ein einfaches textbasiertes magisches Abenteuer mit verzweigten Pfaden erschaffen
+challenges:
+  - title: "Magischer Altersverifizierer"
+    description: "Erstelle ein Programm, das das Alter einer Person überprüft und verschiedene Nachrichten für Kinder, Jugendliche und Erwachsene anzeigt."
+    hint: "Verwende if, elif und else mit Altersvergleichen wie age < 13, age < 18, etc."
+  - title: "Zauberspruch-Stärke-Rechner"
+    description: "Erstelle ein Programm, das die Stärke eines Zauberspruchs basierend auf der Erfahrung des Zauberers und der Art des Zaubers berechnet."
+    hint: "Verwende verschiedene if-Bedingungen für verschiedene Zauberarten und Erfahrungslevel."
+  - title: "Magisches Zahlenrätsel"
+    description: "Erstelle ein Spiel, bei dem der Computer eine Zahl zwischen 1 und 10 'denkt' und der Benutzer raten muss."
+    hint: "Verwende import random und random.randint(1, 10) für die Zufallszahl, dann vergleiche mit der Benutzereingabe."
 ---
 
 # Verzweigte Pfade mit Wenn-Verzauberungen
