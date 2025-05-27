@@ -32,4 +32,4 @@ jobs:
       run: python test_runner.py
           
     - name: Test Jekyll build
-      run: bundle exec jekyll build --dry-run 
+      run: bundle exec jekyll build --destination /tmp/jekyll-test 
