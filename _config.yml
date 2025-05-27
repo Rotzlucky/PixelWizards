@@ -8,7 +8,7 @@ url: "https://rotzlucky.github.io" # the base hostname & protocol for your site
 author: SpellCode Team
 email: contact@spellcode.dev
 lang: en # Default site language
-timezone: UTC
+timezone: Europe/Berlin
 
 # Build settings
 markdown: kramdown
@@ -42,33 +42,25 @@ languages:
     flag: 🇩🇪
     locale: de_DE
 
-# No collections needed - using regular pages in language directories
-
 # Default front matter with language-aware settings
 defaults:
+  # Global defaults for all pages
   - scope:
       path: ""
     values:
       layout: default
-      lang: en # Default language for all pages
+      lang: en
+  # English pages
   - scope:
-      path: ""
-      type: "lessons"
+      path: "en"
     values:
-      layout: lesson
-      lang: en # Default lesson language
+      layout: default
+      lang: en
+  # German pages  
   - scope:
-      path: "_lessons"
-      type: "lessons"
+      path: "de"
     values:
-      layout: lesson
-  # German lesson defaults
-  - scope:
-      path: "_lessons"
-      type: "lessons"
-    values:
-      layout: lesson
-    where:
+      layout: default
       lang: de
 
 # GitHub Pages compatible plugins
@@ -140,6 +132,3 @@ keep_files:
   - assets/images
   - assets/css
   - assets/js
-
-# Timezone and locale
-timezone: Europe/Berlin # Adjust based on your primary audience
