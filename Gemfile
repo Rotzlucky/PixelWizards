@@ -3,6 +3,11 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.0"
 gem "minima", "~> 2.5"
 
+# Ruby 3.4+ compatibility - these gems are no longer bundled by default
+gem "csv"
+gem "logger"
+gem "base64"
+
 # If you want to use GitHub Pages, uncomment the line below
 # gem "github-pages", group: :jekyll_plugins
 
