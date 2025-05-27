@@ -12,7 +12,7 @@ layout: default
         <!-- Progress indicator -->
         <div class="quest-progress">
             {% assign all_lessons = site.pages | where: "lang", page.lang | where: "layout", "lesson" | sort: "order" %}
-            {% assign regular_lessons = all_lessons | where_exp: "lesson", "lesson.url contains '/lesson'" %}
+            {% assign regular_lessons = all_lessons | where_exp: "lesson", "lesson.url contains \"/lesson\"" %}
             {% assign total_lessons = regular_lessons.size %}
             {% assign current_index = 0 %}
             {% for lesson in regular_lessons %}
@@ -36,14 +36,16 @@ layout: default
             <h4><i class="fas fa-compass"></i> Navigation</h4>
             <ul class="nav-list">
                 {% assign all_pages = site.pages | where: "lang", page.lang %}
-                {% assign special_pages = all_pages | where_exp: "page_item", "page_item.url contains 'outline' or page_item.url contains 'preparation'" | sort: "order" %}
+                {% assign outline_pages = all_pages | where_exp: "page_item", "page_item.url contains \"outline\"" %}
+                {% assign preparation_pages = all_pages | where_exp: "page_item", "page_item.url contains \"preparation\"" %}
+                {% assign special_pages = outline_pages | concat: preparation_pages | sort: "order" %}
                 {% for special_page in special_pages %}
                     <li {% if page.url == special_page.url %}class="active" {% endif %}>
-                        {% if special_page.url contains "outline" %}
+                        {% if special_page.url contains 'outline' %}
                             <a href="{{ special_page.url | relative_url }}" class="lesson-link special-link">
                                 <i class="fas fa-map-marked-alt"></i> {{ special_page.title }}
                             </a>
-                        {% elsif special_page.url contains "preparation" %}
+                        {% elsif special_page.url contains 'preparation' %}
                             <a href="{{ special_page.url | relative_url }}" class="lesson-link special-link">
                                 <i class="fas fa-tools"></i> {{ special_page.title }}
                             </a>
